@@ -1,0 +1,1107 @@
+"","SalesID","DisplayName","CompanyID","CoShortName","LeadName","GradeID","LastGradeID","WinRate","OpenDate","LastContactDate","LastWorkDescription"
+"904",83,"郭采帆(Chloe)",636,"麗臺LEADTEK-TP","麗臺#8D52","C","C",10,"2022-04-19","2022-04-19","Time:13:30
+1. Item + price：FH34SRJ-20S-0.5SH(50) 
+2. Application + 產業別: panel for 運動手環
+3. End User:  OBM
+4. PP時間、金額：2022Q4
+5. MP時間、金額：2023Q1      
+""拜訪內容
+拜訪RD Rory, 了解此新model: 8D52 預計5月初會先安排打樣20套, FH34SRJ-20S-0.5SH(50) 20套樣品今日已提供, 目前售價部分暫定會在2000左右, 報價部分會在向HRS申請後提供"
+"905",83,"郭采帆(Chloe)",636,"麗臺LEADTEK-TP","麗臺#8Z81(生物分子分析儀)","C","C",10,"2022-04-13","2022-06-08","Time:13:30
+1. Item + price：FH34SRJ-6S-0.5SH(50) & DF3A-3P-2DS
+2. Application + 產業別: 生物分子分析儀
+3. End User:  OBM
+4. PP時間、金額：2022Q4
+5. MP時間、金額：2023Q1      
+""拜訪內容
+拜訪RD Albert, 了解5月底已先安排打樣50套, 6月底會安排整機測試, 另DF3A-3P-2DS 2K訂單已於這周安排出貨, 此款會在提供麗臺料號, 請我司提供承認文件, FH34SRJ-6S-0.5SH(50)此款目前尚有庫存, 會在確認後續測試結果, 並請業務確認需求後, 提供後續需求訂單"
+"906",83,"郭采帆(Chloe)",636,"麗臺LEADTEK-TP","麗臺#FH28D-30S","C","C",10,"2015-04-21","2022-06-16","Time:13:30
+1. Item + price：CX90MWD2-24P
+2. Application + 產業別：醫療產品			
+3. End User:  JP					
+4. PP時間、金額：2023Q1					
+5. MP時間、金額：2023Q3    FC: 5K			
+拜訪RD 小羊, 提供CX90B-16P 10pcs樣品, 此款非防水, 但為 SMT 板上型 16PIN, 此款目前是較多人使用, 價格上較有優勢, 小羊會在與機構討論後, 告知後續會使用哪一款(CX90MWD2-24P & CX90B-16P ) , 另one action lock FH63S-20S-0.5SH 5PCS樣品予其確認, 其確認後layout太大(因無12PIN)且FPC 金手指部分較為特殊, 建議使用一般FPC connector FH34SRJ-12S-0.5SH(50), 小羊會在與機構討論後告知"
+"907",83,"郭采帆(Chloe)",636,"麗臺LEADTEK-TP","麗臺#降噪耳機充電艙","B","B",10,"2021-10-20","2022-03-29","Time:15:30
+1. Item + price：FH34SRJ-12S-0.5SH(50) & BM23FR0.6-8DP-0.35V(51) & BM23FR0.6-8DS-0.35V(51)  /  BM28B0.6-6DP/2-0.35V(51) & BM28B0.6-6DS/2-0.35V(51)  
+2. Application + 產業別: 降噪耳機充電艙
+3. End User:  USA
+4. PP時間、金額：2022Q1
+5. MP時間、金額：2022Q2  
+""拜訪內容
+拜訪RD 小羊, FH34SRJ-12S-0.5SH(50) 此款麗臺料號已提供, 會在依其需求提供承認書; 另有關於BM23FR & BM28B for 上下板橋接, 因考量成本因素目前暫不使用, 此規格已有建立在其系統, 後續新案有需求會再提供麗臺料號, 請我司提供承認資料; 另semitec FT系列其已將資料提供其機構參考, 另提供semitec產品目錄, 待後續設計板確認, 會再請我司提供樣品"
+"908",83,"郭采帆(Chloe)",636,"麗臺LEADTEK-TP","麗臺#血氧機","D","D",10,"2022-02-15","2022-05-11","Time:13:30
+1. Item + price：FH34SRJ-16S-0.5SH(50) 
+2. Application + 產業別: 血氧機
+3. End User:  EUR & USA
+4. PP時間、金額：2022Q2
+5. MP時間、金額：2022Q3  
+""拜訪內容
+拜訪RD 郭加仁, 提供FH34SRJ-16S-0.5SH(50) 20pcs樣品, 了解因變更設計, 所以原使用FH34SRJ-12S-0.5SH(50) 要增加4pin, 改為使用FH34SRJ-16S-0.5SH(50), 會於下周先安排打樣, 待確認後, 會再請採購提供2k樣品訂單, 後續持續follow進度"
+"909",83,"郭采帆(Chloe)",9030,"麗清-TP","麗清#LED","E","E",10,"2015-12-04","2022-05-23","Time: 13:50
+1. Item + price：DF59M-1S-H(21)/DF59M-2224PCF/ Semitec CRD
+2. Application + 產業別：LED
+3. End User：USA & EUR
+6. 拜訪內容 :
+拜訪RD Leo,提供DF59M-1S-H(21)/DF59M-2224PCF  5套樣品予其核對確認, 詢問目前交期&價格問題, 如確認規格ok, 會再提供T/P給我司參考, 另了解其有確認 semitec CRD (定電流二極體)資料, 如後續新案無使用driver會在請我司提供樣品&報價"
+"910",83,"郭采帆(Chloe)",11362,"關於科技","關於#拜訪","C","E",10,"2021-03-17","2022-06-16","Time: 10:30
+1. Item + price：CX90B-16P 
+2. Application + 產業別：NB IOT module
+3. End User: USA
+4. PP時間、金額：2022Q4
+5. MP時間、金額：2023Q1  C: 50K/M
+拜訪PM Zoe, 提供CX90B-16P 30PCS樣品予其打樣確認, 此款在韓國生產, 交期約16-20周, 會在確認後告知後續進度, 另有關造隆水上摩車案, 了解其已在上周將樣品提供造隆確認, 後續需待造隆與終端確認後, 才會進行下一步, 持續追蹤"
+"911",83,"郭采帆(Chloe)",10945,"鴻騰","鴻騰#拜訪","E","E",10,"2019-03-21","2022-06-15","Time: 13:30
+1. Item + price：FH63S-10S-0.5SH & FH63S-50S-0.5SH
+2. Application + 產業別：Meter
+3. End User：鴻華電動車Model C (SUV車)
+""拜訪內容
+拜訪RD 劉文豪 , 提供FH63S-10S-0.5SH & FH63S-50S-0.5SH 各5套樣品留底, 將關承認資料也會在申請後提供, 此案由公信主導, 最晚7月初前會提供foxcoon樣品確認, 後續進度會在持續與公信確認"
+"912",83,"郭采帆(Chloe)",10792,"鴻元吉業","鴻元吉業#拜訪","E","E",10,"2018-08-17","2021-11-26","Time: 15:30
+1. Item + price：PQ50W
+2. Application + 產業別：儀器設備
+3. End User： JP
+拜訪內容 : 
+拜訪RD Gary, 提供HRS FA show邀請函, 介紹PQ50W, 此款較PQ50WT小, 且可用在50pin已內的防水I/O, 另介紹okaya SPD LV series, 安裝到產品上, 就可以防突波, 保護自身的產品, 將先提供資料予其參考"
+"913",83,"郭采帆(Chloe)",618,"邁特-TP","邁特#拜訪","D","D",10,"2022-02-23","2022-02-23","Time:15:30
+1. Item :U.FL-R-SMT-1(10)
+2. Application + 產業別: 智慧安控鑰匙盒
+3. End User:  EUR & USA
+4. PP時間、金額：2022Q2
+5. MP時間、金額：2022Q3  
+""拜訪內容
+拜訪認識sourcer Queena, 了解其公司除為SMT廠外, 其也有與其他公司合作開發設計(JDM), 目前有一新JDM新案是與樂邦安控(Lubn)一起合作的智慧安控鑰匙盒. 提供U.FL-R-SMT-1(10) 30PCS樣品, 預計6月會有1捲需求, 將會先安排打樣, 並儘快確認後提供訂單"
+"914",83,"郭采帆(Chloe)",9919,"聯齊科技","聯齊#U.FL","E","E",10,"2017-01-24","2022-04-14","Time: 11:00
+1. Item + price：IX
+2. Application + 產業別：Gateway
+3. End User:  JP & USA
+拜訪RD Tony, 了解其目前負責Gateway產品設計, 介紹IX系列, 此款尺寸較RJ 45小, 且帶LOCK並可防EMI & 高速傳輸, 因其目前大都還是使用RJ45產品, 後續有在針對客戶設計小型化GATEWAY, 將先提供資料予其參考"
+"915",83,"郭采帆(Chloe)",2331,"聯發科-TP","聯發科#例行拜訪","E","D",10,"2016-04-01","2021-06-21","Time: WFH
+1. Item + price：DF13EA-10DP-1.25V(22) & DF13-10DS-1.25C & DF13-2630SCF
+2. Application + 產業別:測試板
+拜訪內容 : 
+與RD 劉嘉惠 討論此案問題, 了解其確認DF13EA-10DP-1.25V(22) & DF13-10DS-1.25C & DF13-2630SCF 規格後, 請我司先提供10套樣品予其先核對, 將申請後提供"
+"916",83,"郭采帆(Chloe)",11361,"擎添工業","擎添#拜訪","E","E",10,"2021-03-11","2022-03-01","Time: 13:30
+1. Item + price：DF51K-20DP-2DSA(800) & DF51K-20DS-2C(800) & DF11-2428SCF
+2.Application + 產業別：AGV
+3. End User: ODM
+拜訪內容 : 
+拜訪RD 黃章哲, 提供DF51K-20DP-2DSA(800) & DF51K-20DS-2C(800) & DF11-2428SCF 各5套樣品予其先核對測試, 另了解其目前RF connector是使用IPEX, 推薦U.FL-R-SMT-1(80), 將先提供datasheet & 測試報告(insertion loss)予其參考"
+"917",83,"郭采帆(Chloe)",5307,"興聯-TP","興聯#拜訪","E","E",10,"2016-11-17","2021-04-27","Time:10:30
+1. Item + price：CX90B-16P
+2. Application + 產業別：車用產品/ 車用
+3. End User: JP & USA
+ 拜訪內容 : 
+拜訪RD Nick, 提供CX90B-16P   10pcs樣品予其確認, 價格待確認後會再與sourcer討論, 另告知如有線端需求我司也能提供長度為1M, 後續有需求會再告知"
+"918",83,"郭采帆(Chloe)",2508,"興能高-TP","興能高#DF58","C","E",10,"2021-05-28","2021-08-26","Time: 15:30
+1. Item + price：DF58-3S-1.2C &DF58-2830SCF
+2.Application + 產業別：電池for ECG
+3. End User: 敦捷
+ 拜訪內容 : 
+拜訪認識PM 徐鈺雲, 了解目前打樣無問題. 並會於下周提供20套樣品予敦捷確認, 因目前敦捷電池尚是使用旭電(新店), 後續狀況會待敦捷確認樣品後才能有進一步結果, 持續follow"
+"919",83,"郭采帆(Chloe)",11248,"翰碩","翰碩#拜訪","E","E",10,"2020-08-18","2020-08-18","Time: 13:20
+1. Item + price：BM23PF0.8-14DP-0.35V(51) & BM23PF0.8-14DS-0.35V(51)
+2.Application + 產業別：電容筆
+3. End User: 仁寶
+4. PP: 2020/9
+5. MP: 2021Q1
+6. FC: 30K/M       金額:NTD 21萬/M
+ 拜訪內容 : 
+與Justin一起拜訪認識sourcer 閻富滿, 提供BM23PF0.8-14DP-0.35V(51) & BM23PF0.8-14DS-0.35V(51) 20套樣品予RD測試, sourcer 表示終端客戶schedule都很緊急, 預計會再進行第二次 sample run, 數量約100套, 希望我們能幫忙先備料, competiter: Molex"
+"920",83,"郭采帆(Chloe)",9566,"儒億","儒億#例行拜訪","B","D",10,"2016-06-01","2021-12-01","Time: 13:30
+1. Item + price：FH52K-18S-0.5SH & GT25-16DP-2.2V(56) & FH52K-10S-0.5SH
+2. Application + 產業別：sancer for 方向盤
+3. End User: USA
+""拜訪內容
+拜訪RD Kevin, 詢問此案後續進度, 了解其11月至米蘭參展, 反映不錯, 所以此案已和公信討論以專案進行, 預計明年Q3會量產, 會在與公信討論後續進度, 持續follow"
+"921",83,"郭采帆(Chloe)",1778,"鋒亞-TP","鋒亞#例行拜訪","E","E",10,"2016-07-05","2022-02-24","Time: 13:30
+1. Item + price：DF22-2P-7.92DSA(53) & DF22-2S-7.92C(28) &DF22-1416SCFA
+2. Application + 產業別：射出成型機
+3. End User: China
+拜訪內容 : 拜訪RD Mike, 提供DF22-2P-7.92DSA(53) & DF22-2S-7.92C(28) &DF22-1416SCFA  5套樣品予其確認, 價格部分將會先申請後提供其參考, 目前其設計需大都為30A, 若後續有大電流需求30A以上, 會在參考HRS DF60系列,"
+"922",83,"郭采帆(Chloe)",1316,"輝煌-TP","輝煌# ST40X-10S","E","E",10,"2015-04-16","2022-06-16","Time: 15:30
+1. Item + price：HR25-7TP-8S(72) 
+2. Application + 產業別：線材
+3. End User: USA 
+4. PP時間、金額：2022Q3
+5. MP時間、金額：2022Q4         
+拜訪sourcer Lily, 提供HR25-7TP-8S(72) 3pcs 樣品, 會先安排打樣予終端確認, 因目前缺原材料, 交期需30周以上, 會在與終端客戶討論, 另討論HR25 & HR10A差異, HR10A 2A per pin, HR25 1A per pin, 目前客戶大都使用HR10A-7P-6S(73)此款, 如有6pin需求能考慮使用, datasheet會再提供其參考"
+"923",83,"郭采帆(Chloe)",11484,"慧通智聯","慧通智聯#拜訪","E","E",10,"2022-05-20","2022-06-10","Time: 11:00
+1. Item + price：DF11-16DP-2DS(24) & FH26W-31S-0.3SHW(60) & FH33-6S-0.5SH(10)
+2. Application + 產業別：辨識系統
+3. End User: USA
+4. PP時間、金額：2022Q4
+5. MP時間、金額：2023Q1   FC: 5K/M    
+""6. 拜訪內容 : 
+拜訪sourser Amy, 討論此案價格問題, 有部分價格偏高, 因目前原材缺料&運費調漲問題, 價格部分無法meet 其T/P, 會在與HRS討論後提供價格, 提供U.FL-R-SMT-1(80) 20PCS樣品予其測試, 此款可以替代IPEX, 會再請RD確認"
+"924",83,"郭采帆(Chloe)",6026,"德傑-TP","德傑#例行拜訪","E","E",10,"2016-09-12","2021-11-02","Time: 15:30
+1. Item + price：MDF76GW-30S-1H(55)
+2. Application + 產業別: IPC
+3. End User: USA
+4. PP時間、金額：2022Q2
+5. MP時間、金額：2022Q3     FC: 3K/LOT  
+拜訪Sourcer Tina, 了解新案531674 -10RE 將會使用MDF76GW-30S-1H(55), 需求5pcs樣品打樣, 將先提供2D & SPEC, 樣品&報價會向HRS申請後提供"
+"925",83,"郭采帆(Chloe)",10795,"廣鴻電機","廣鴻電機#拜訪","E","E",10,"2018-08-17","2022-02-21","Time: 13:30
+1. Item + price：DF22系列
+2. Application + 產業別：power board for 機械設備
+3. End User： Japan
+拜訪內容 : 
+拜訪認識RD 賴則彥, 其主要負責power board, 提供HRS 新目錄, 了解其大都使用2PIN/ 10A per pin, 推廌DF22系列, 此款有帶LOCK且可達30A, 將先提供資料予其參考"
+"926",83,"郭采帆(Chloe)",3872,"廣穎電通-TP","廣穎#FX10A","E","E",10,"2017-01-17","2021-10-05","Time: 11:00
+1. Item + price：CX70系列
+2. Application + 產業別：外接式硬碟
+3. End User: OBM
+拜訪RD Kevin, 詢問確認狀況, 因目前考量成本問題(TYPE C 線材較貴), 所以還是先維持使用USB TYPE, 樣品會先保留, 後續如要變更會再請我司提供報價&承認文件"
+"927",83,"郭采帆(Chloe)",4224,"銘異-TP","銘異#TF31,TF38","E","D",10,"2015-04-20","2021-05-24","Time: work at home
+1. Item + price：FH34SRJ-5S-0.5SH(50)
+2. Application + 產業別：Fingerprint module
+3. End User： USA
+4. PP時間、金額：2021Q4
+5. MP時間、金額：2022Q1  FCST:10K/M
+6. 拜訪內容 :
+久未聯繫客戶, Jill詢替代料, 了解舊案原先使用MOLEX, 確認規格後推薦 FH34SRJ-5S-0.5SH(50) 予其, 已提供2D &SPEC, 待其確認規格是否OK後申請樣品"
+"928",83,"郭采帆(Chloe)",3492,"誌晟-TP","誌晟#EV-BFC","E","E",10,"2014-02-10","2022-01-17","Time: 15:30
+1. Item + price：ZE064W-24DP-HU/R(B) & ZE064-2022PCF & ZE064W-WCP(2022)
+2. Application + 產業別：IVI for 電動車
+3. End User： JP
+4. PP時間、金額：2022Q2
+5. MP時間、金額：2022Q4   FC: 1K set/M     
+""6. 拜訪內容 : 
+拜訪Sourcer 尤好如, 了解目前新案將使用ZE064W-24DP-HU/R(B) & ZE064-2022PCF & ZE064W-WCP(2022), 此款為車用防水接頭, 如未打滿PIN需使用防水栓ZE064W-WCP(2022), 將先提供2D & SPEC & 手順書予其, 樣品需求5套, 申請後提供"
+"929",83,"郭采帆(Chloe)",2156,"維熹-TP","維熹#例行拜訪","E","E",10,"2016-03-24","2021-09-10","Time: 15:00
+拜訪內容 : 
+拜訪副總吳瑞聯, 詢問有關電動大巴問題, 了解目前其做的充電槍是FOR 特斯拉電動車, 且是與工研院合作. 並請其幫忙提供工研院窗口, 會在與工研院聯繫詢問看是否能取得充電系統廠聯繫資料"
+"930",83,"郭采帆(Chloe)",217,"維鈦-TP","維鈦#N/A","E","D",10,"2015-05-07","2020-12-01","Time:13:20
+1. Item + price： FH34SRJ-4S-0.5SH(50)
+2. Application + 產業別：touch panel & TFT-LCD
+3. End User： EUR & USA
+拜訪內容 : 
+拜訪Sourcer Susan, 提供 FH34SRJ-4S-0.5SH(50) 10PCS樣品予其確認, 待樣品確認後會再提供價格"
+"931",83,"郭采帆(Chloe)",11440,"福客斯","福克斯#拜訪","E","E",10,"2022-02-09","2022-03-30","Time:13:30
+1. Item + price：DF62W-6S-2.2C & DF62W-6EP-2.2C & DF62W-EP2022PCF &DF62W-2022SCF
+2. Application + 產業別: 行動冰箱
+3. End User:  USA
+4. PP時間、金額：2022Q3
+5. MP時間、金額：2022Q4  
+""拜訪內容
+拜訪RD 王俞涵,提供DF62W-6S-2.2C & DF62W-6EP-2.2C & DF62W-EP2022PCF &DF62W-2022SCF 5套樣品予其確認, 討論價格&交期問題, 目前交期約24周, 價格部分會在與HRS申請, 另了解其已將SEMITEC資料轉給負責RD參考, 因目前暫無需求, 後續有需求會在告知"
+"932",83,"郭采帆(Chloe)",3030,"漢軍-TP","漢軍 TF31-30S-0.5SH / TF31-36S-0.5SH","C","C",10,"2015-07-24","2022-05-04","Time: 15:30
+1. Item + price：DF40 & FH34SRJ-50S-0.5SH(50) & FH52-50S-0.5SH
+2. Application + 產業別：溫測門禁感應器
+3. End User： 歐洲 & USA
+拜訪內容 : 
+拜訪RD 王紹軍, 了解其目前有在設計溫度門禁感應器, for 鏡頭部分會使用BTB, 推薦DF40系列, 目前設定高度約2.5~3MM, 30PIN, 將先提供DF40資料予其確認, 另for panel部份, panel廠很多使用HRS FH34SRJ-50S-0.5SH(50) & FH52-50S-0.5SH, 將先提供2D & 3D & SPEC予其核對, 待確認後申請樣品"
+"933",83,"郭采帆(Chloe)",9732,"鈺太","鈺太#例行拜訪","C","E",10,"2016-09-29","2022-05-10","Time: 15:30
+1. Item + price： FH63S & FH67 & TF31 & FH34SRJ & FH52 
+2. Application + 產業別：Smart speaker
+3. End User： China & USA
+4. PP時間、金額：2022Q4
+5. MP時間、金額：2023Q1   FC: 30K/M   
+""6. 拜訪內容 : 
+拜訪認識RD 江俊隆, 了解其主要負責自動化生產規劃, 了解目前其公司有計畫使用One action connector, 介紹HRS FH63S & FH67 系列, 此2款為pitch:0.5mm, FH63S為right angle type, 最大到60pin; FH67為直立式, 最大到50pin, 將會再提供相關資料予其參考; 另詢問非One action connector, 需求pitch:0.5mm / 6pin, 推薦TF31 & FH34SRJ & FH52, 將再提供TF31-6S-0.5SH(800) & FH34SRJ-6S-0.5SH(50) &
+FH52-6S-0.5SH, 將在提供2D & 3D &SPEC予其確認, 待確認後申請樣品"
+"934",83,"郭采帆(Chloe)",11473,"詮發","詮發#拜訪","E","E",10,"2022-04-12","2022-04-12","Time: 13:30
+1. Item + price：HR30
+2. Application + 產業別： 儀器設備
+拜訪內容 : 
+拜訪新客戶, 此為FA show來參觀客戶, 認識開發經理林育德, 了解其來參觀FA show時有詢問防水圓形接頭類似HR30系列, 介紹HR30系列, 因其主要產品是葉片加工, 並有機器維修, 後續如有需求會在告知, 另告知如維修時有線材需求, 我司也能幫忙提供, 後續會以電話或MAIL連繫"
+"935",83,"郭采帆(Chloe)",1834,"董元-TP","董元#公信AR HUD","C","C",10,"2021-10-28","2022-01-04","Time: 15:30
+1. Item + price：ZE05-4S-HU/R & ZE05-24DS-HU/R & ZE05-2022SCF 
+2. Application + 產業別：IVI
+3. End User：勤威
+4. MP:2022Q3  FC: 3K/M
+""拜訪內容
+拜訪Tina, 提供ZE05-4S-HU/R &ZE05-24DS-HU/R & ZE05-2022SCF 20套樣品, 會再安排打線提供予公信確認; 另了解for 公信AR HUD 線材已都提供公信確認, 後續schedule需待公信終端確認, 會在持續與公信確認後續schedule"
+"936",83,"郭采帆(Chloe)",11138,"聖曜科技","聖曜科技#拜訪","A","E",10,"2019-10-07","2022-06-08","Time: 11:00
+1. Item + price：HR25-7TR-4P(73)+cable
+2. Application + 產業別：醫療用品
+3. End User： 聖曜
+4. PP時間、金額：2022Q3
+5. MP時間、金額：2022Q4     
+""6. 拜訪內容 : 
+拜訪sourcer Sophie, 討論此案問題, 其確認大朋提供扣式鐵粉芯, 雖然在加工上比較簡單但價格太高, 如不用扣式, 大朋建議線材長度要加長, 或是鐵粉芯尺寸改小, 會在與終端討論後告知"
+"937",83,"郭采帆(Chloe)",8406,"群瑜-TP","群瑜#例行拜訪","C","C",10,"2016-06-02","2022-05-30","""Time: 14:00 
+Item + price：GT36S-1/1/1/1P-DS(ABCD) &GT36S-1P-DS(B)&GT36S-1S-HU(A)&GT36S-1S-HU(B)&GT36S-1S-HU(C) &GT36S-1S-HU(D) &GT36S-1S-R & GT36S-2426/1.6-2.9SCF & U.FL-R-SMT-1(10) & GT25H2-40DP-2.2H &GT25-40DS-HU &GT25-40DS-R &GT25H-2024SCF &GT17HN-4DP-2DS(A)(10) & GT17HN-4DP-2DS(B)(10) &GT17VA-8DP-DS 
+2. Application + 產業別： 自動選頻收音機 
+3. End User：OBM 
+4. PP時間、金額：2022Q4 
+5. MP時間、金額：2023Q1 FC: 1K/M 金額: 約30萬/M """"
+拜訪內容 拜訪Bright , 針對目前狀況進行討論,雖已通過amazon確認, 且拿到日本台灣跟美國專利,目前有跟日本M mobility 在談合作,此公司負責人維安藤國威 ( 2000~2005 為sony 社長)將針對日本物流市場之車隊管理系統合作,利用sony強大的影像技術搭配群瑜在車用AI強項,預計下一批主芯片預計8月會到,將進行第一次試樣"""
+"938",83,"郭采帆(Chloe)",94,"萬祿細田-TP","萬祿細田#例行拜訪","E","E",10,"2016-07-18","2020-04-15","Time:13:10
+1. Item + price：DF50A-10P-1H(51)
+2. Application + 產業別：控制板
+3. End User： Libra Industries
+4. PP時間、金額：2020Q4
+5. MP時間、金額：2021Q1  FC: 1K   
+""6. 拜訪內容 : 
+拜訪認識新SOURCER 陳思羽, 新案預計使用DF50A-10P-1H(51), 將先提供資料&樣品予其參考, 另了解想尋Amphenol替代料, 將先提供規格後尋HRS可替代產品"
+"939",83,"郭采帆(Chloe)",10796,"瑞健-TP","瑞健#拜訪","E","E",10,"2022-02-16","2022-03-17","Time:15:30
+1. Item + price：DF51K-10DP-2DSA(800) & DF51-2S-2C&DF11-2428SCF
+2. Application + 產業別:醫療床控制板
+3. End User:  EUR & USA
+""拜訪內容
+拜訪sourcer 王國綸, 提供DF51K-10DP-2DSA(800) & DF51-2S-2C&DF11-2428SCF 5套樣品予其先核對, 了解10pin是使用量較多, 其會再提供target price, 會再與HRS申請後提供其參考"
+"940",83,"郭采帆(Chloe)",1705,"瑞軒-TP","瑞軒#初次拜訪(TV)","D","D",10,"2015-04-01","2021-12-09","Time: 13:30
+1. Item + price：FH34SRJ & CX系列
+2. Application + 產業別： Monitor / 機器人&AR glass
+3. End User： OBM
+""拜訪內容 : 
+拜訪RD Randy(原泰金寶RD)並介紹sourcer Amy, 了解其公司目前大都使用Local 信盛 BTW connector, FPC大都使用pitch:0.5mm, B TO B 較少使用, 目前公司除原先Monitor外, 現有在開發機器人&AR glass, 介紹HRS產品, 推薦FH34SRJ & CX系列, 將先提供資料予其參考"""
+"941",83,"郭采帆(Chloe)",1076,"瑞芳JUIFANG-TP","瑞芳#P070UG","A","A",10,"2013-09-17","2022-03-31","Time: 13:30
+1. Item + price：DF52-14P-0.8C & DF52-2832PCF
+2. Application + 產業別: 電磁爐
+3. End User： Bosch
+4. PP: 2022Q3
+5. MP: 2022Q4  FC: 60K SET/LOT  
+拜訪內容 : 
+拜訪Sourser Sally, 提供DF52-14P-0.8C & DF52-2832PCF 30套樣品, 將會先安排打樣予終端確認, 交期部分因銅材缺料, 交期須達200天, 會在確認後續狀況後儘快提供訂單, 另討論目前在途訂單交期問題, 已請日本幫忙, 會再更新交期予其, 而針對近日日本提高端子價格問題, 已有針對其目前既有產品向日本申請特單, 會在告知後續結果"
+"942",83,"郭采帆(Chloe)",11262,"楷燁","楷燁拜訪","B","E",10,"2020-09-24","2022-06-15","Time:11:00
+1. Item + price：HR10A-13P-20P(73)
+2. Application + 產業別：IPC
+3. End User: JP
+拜訪內容 : 
+拜訪sourcer 倪秀婷, 提供HR10A-13P-20P(73) 5pcs樣品, 因此款有用到Nylon PA66, 所以樣品&訂單交期較長, 目前因缺原材料, 所以交期部分無法提前, 了解目前有新案也會使用到此系列, 交期須達34周以上, 將無法meet客戶需求, 將在查詢看看是否能有替代料提供其參考"
+"943",83,"郭采帆(Chloe)",10894,"微馳智電","微馳智電#拜訪","C","E",10,"2018-12-14","2021-10-29","Time: 13:30
+1. Item + price： TF31-20S-0.5SH(800)
+2. Application + 產業別: POS
+3. End User: USA 
+4. PP時間、金額：2021Q3
+5. MP時間、金額：2022Q1  FC: 20k/m    
+拜訪sourcer Alex, 了解此案將先進行小批量試產, 此次試產會交給邁特幫忙, 需求200pcs, 目前HRS有庫存, 將會請邁特與我司聯繫並下單"
+"944",83,"郭采帆(Chloe)",10894,"微馳智電","微馳#dashboard","D","D",10,"2022-02-14","2022-02-14","Time:13:30
+1. Item + price：FH34SRJ-40S-0.5SH(50) & FH34SRJ-50S-0.5SH(50)
+2. Application + 產業別: dashboard for 機車
+""拜訪內容
+拜訪RD Bill, 提供FH34SRJ-40S-0.5SH(50) & FH34SRJ-50S-0.5SH(50) 各20pcs樣品, 此案為JDM case, 會先安排打樣20套與終端討論, 價格會在申請後提供"
+"945",83,"郭采帆(Chloe)",10894,"微馳智電","微馳#車用","D","D",10,"2021-11-08","2022-03-24","Time:10:30
+1. Item + price：ZE05 & FH52K & GT17&ZE064W
+2. Application + 產業別: ECU
+""拜訪內容
+拜訪RD Bill, 提供FH52K-10S-0.5SH & FH52K-40S-0.5SH 各10套樣品, 會再安排打樣, 另詢問FH34SRJ 與FH52K差異, 因FH52K可達125度, 為車規產品, FH34SRJ 僅能達105度, 非車規產品, 但for 機車dashboard可以使用; 另詢問防水ZE064W系列, 目前有14 &24PIN, 8PIN將量產, 已有申請demo board, 會再提供其參考"
+"946",83,"郭采帆(Chloe)",10894,"微馳智電","微馳#DF51","C","C",10,"2021-11-11","2021-12-15","Time:11:00
+1. Item + price：DF51A-26DP-2DSA、DF51A-2DP-2DSA & DF51-2S-2C & DF51-26DS-2C & DF11-2428SCF
+2. Application + 產業別: IPC
+3. End User:  JP
+4. PP時間、金額：2022Q1
+5. MP時間、金額：2022Q3  
+""拜訪內容
+拜訪RD Bill, 提供DF51A-26DP-2DSA、DF51A-2DP-2DSA & 線端DF51-2S-2C & DF51-26DS-2C & DF11-2428SCF 各30PCS樣品, 會再安排打樣提供終端確認; 另詢問有關車用防水接頭問題, 了解其明年有規劃for車用產品, 將會再提供資料予其參考"
+"947",83,"郭采帆(Chloe)",9471,"奧圖威迅","奧圖威迅#例行拜訪","A","C",10,"2016-04-21","2022-05-10","Time:13:30
+1. Item + price：DF40C-40DP-0.4V(51) & DF40C(2.0)-40DS-0.4V(51)
+2. Application + 產業別：工業用攝影機(5M), IPC
+3. End User: EU
+4. PP時間、金額：2022Q3
+5. MP時間、金額：2022Q4    FC: 10k    
+""6. 拜訪內容 :  
+拜訪RD經理李運來, 提供DF40C-40DP-0.4V(51) & DF40C(2.0)-40DS-0.4V(51) 各20套樣品, 下周會先安排打樣, 7月要進行500套試產, 已請HRS幫忙先將樣品留下, 試產訂單部分會再請採購儘快提供, 因目前交期不好, 會在確認後續schedule後盡快提供量產訂單"
+"948",83,"郭采帆(Chloe)",11143,"越華","越華#拜訪","E","E",10,"2019-10-30","2022-04-06","Time: 13:40
+1. Item + price：ZE064W
+2. Application + 產業別：摩特車
+3. End User： USA
+4. PP時間、金額：2022Q2
+5. MP時間、金額：2022Q3    FC: 1K/M
+""6. 拜訪內容 : 
+拜訪sourcer Redd, 了解ZE064W-24DP-HU/R(A) & ZE064W-24DS-HU/R(A) & ZE064-2022PCF & ZE064-2022SCF 2套樣品已請RD幫忙確認, 另討論IX系列, 了解其已有將資料提供給RD參考, 因此款較RJ 45小型且帶LOCK, 而其RD都在越南, 希望能提供demo board, 會在向HRS申請後提供"
+"949",83,"郭采帆(Chloe)",11217,"敦捷光電","敦捷光電#拜訪","A","E",10,"2020-07-09","2022-05-10","Time: 10:30
+1. Item + price：USB A + C TYPE Cable
+2.Application + 產業別：心律檢測器
+3. End User: ODM
+ 拜訪內容 : 
+拜訪RD 主任郭嘉鈞, 了解此案目前代工廠尚在評估中, USB A + C TYPE Cable部分已先提供100pcs訂單, 此案會先交給台大醫院, 與其他醫療機構合作已在進行,因疫情問題進行較為緩慢,會在持續follow後續進度"
+"950",83,"郭采帆(Chloe)",7914,"惠國電子-TP","惠國#SMT & DIT","E","E",10,"2015-06-17","2022-02-16","Time: 15:30
+1. Item + price：GT25H2-20DP-2.2H(10)
+2. Application + 產業別： 車用
+ 拜訪內容 : 
+拜訪Sourcer Lisa, 提供GT25H2-20DP-2.2H(10) 5PCS樣品申請予其確認, 討論此款與TE差異, TE為DIP, HRS 為SMT+DIP, 可節省工時, 會再安排打樣測試"
+"951",83,"郭采帆(Chloe)",3370,"博飛-TP","博飛#DF12","E","E",10,"2016-03-22","2021-12-23","Time: 13:30						
+1. Item + price：DF51A		
+2. Application + 產業別：IPC		
+3. End User: USA						
+拜訪內容
+拜訪RD Ken, 提供線端DF51-20DS-2C &DF11A-2428SCF  5套樣品予其, 會再請線材廠安排打線, 並告知其我司也能提供線端打線後整體樣品, 如後續有需求會在告知, 價格部分會在與原廠討論後提供"
+"952",83,"郭采帆(Chloe)",432,"凱碩-TP","凱碩#STB","E","E",10,"2017-10-20","2022-01-21","Time: 11:00
+1. Item + price: FH34SRJ-45S-0.5SH(50)
+2. Application + 產業別：STB / 消費型
+3. End User: EUR
+4. PP時間、金額：2022Q2
+5. MP時間、金額：2022Q4  FC: 50K/M 
+""6. 拜訪內容 : 
+帶HRS Annika一起拜訪RD James, 目前其全數移至NKG北投, 採購部分會由NKG統合採購, 新案CT21 for panel有FPC 45PIN需求, 推薦FH34SRJ-45S-0.5SH(50), 將先提供2D & SPEC, 樣品將先提供10套予其確認, 價格會在向日本申請後提供"
+"953",83,"郭采帆(Chloe)",4793,"造隆-TP","造隆#FH52","B","B",10,"2018-09-27","2022-06-09","Time: 13:30
+1. Item + price：FH52K-45S-0.5SH
+2. Application + 產業別：dashboard
+3. End User: 三陽
+4. PP時間、金額：2022Q3  
+5. MP時間、金額：2022Q4  FC: 5K台/M   
+拜訪sourcer 蔡明錦, 提供FH52K-45S-0.5SH 30pcs樣品, 會再請RD進行核對(原使用展碩 connector), 另討論交期問題, 目前因大部分for 車用 IVI & dashboard廠商都使用此系列, 交期約24周, 會再請RD儘快確認, 如確認OK, 會再提供訂單, 後續持續follow"
+"954",83,"郭采帆(Chloe)",10832,"連進電子","連進#拜訪","E","D",10,"2018-10-31","2021-09-06","Time: 13:40
+1. Item + price: FH34SRJ & TF31 & FH35C & FH26W
+2. Application + 產業別：工控板,儀器設備
+3. End User：USA
+""拜訪內容
+拜訪sourcer Judy 並介紹RD 林宗申, 了解目前有在尋找FPC connector, 介紹FH34SRJ & TF31 & FH35C & FH26W 產品, 此幾款是目前價錢較有競爭力, 將先提供資料予其參考"
+"955",83,"郭采帆(Chloe)",981,"盛通-TP","盛通#拜訪","E","E",10,"2019-12-06","2020-07-20","Time: 13:50
+1. Item + price：DF40C-20DP-0.4V(51) &DF40C(2.0)-20DS-0.4V(51)
+2. Application + 產業別：電腦周邊
+3. End User： USA & JP
+4. PP時間、金額：
+5. MP時間、金額：2020/3    
+""6. 拜訪內容 : 
+拜訪sourcer Sandy, 討論DF40C-20DP-0.4V(51) &DF40C(2.0)-20DS-0.4V(51)價格問題, 會在向HRS申請後提供, 另其會在整理murata 規格給我司"
+"956",83,"郭采帆(Chloe)",9363,"理義科技股份有限公司","理義#FH34SRJ","E","C",10,"2016-02-22","2020-12-24","Time: 13:30
+1. Item + price：FH52 & FH34SRJ
+2. Application + 產業別： touch panel 
+3. End User：China & USA
+拜訪內容 : 
+拜訪sourcer Joyce, 提供FH34SRJ-50S-0.5SH(50) 10PCS樣品予其核對機構, 會再針對其T/P向HRS申請價格"
+"957",83,"郭采帆(Chloe)",10130,"淳安電子","淳安# Rear camera","C","C",10,"2017-09-22","2022-06-13","Time: 13:30
+1. Item + price：POK19系列
+2. Application + 產業別：camera module
+3. End User: China
+拜訪RD Bess, 提供POK19 BTB & BTW demo board 予其參考, 因BTW目前大都使用羅森伯格, 而HRS POK19 BTW 無防水, POK19 BTB 較為特別, POK19-PR-PC(800) & POK19-R-PC(800) demo board 將留給其參考, 後續如有新案設計可以參考使用, 2D & 3D & SPEC會在提供予其確認"
+"958",83,"郭采帆(Chloe)",10412,"捷準科技-TP","捷準科技#MCR60A","D","",10,"2018-03-21","2022-04-20","Time: 15:30
+1. Item + price：MCR60A-98D-2.54DS(70)
+2. Application + 產業別：IPC
+3. End User： 歐美
+4. PP時間、金額：ready
+5. MP時間、金額：ready     FC: 2K/set   
+""6. 拜訪內容 : 
+拜訪sourcer黃麗萍 & 認識RD Ben, 詢問MCR60A-98D-2.54DS(70)後續需求, 了解此案是專案, 會在請業務確認後續訂單狀況; 另了解RD Ben主要負責工業用控制板, 提供function max目錄, 介紹FX18 & FX23系列, 推薦FX23系列, 此款有帶power pin & floating type, 目前較多人使用, 將先提供此2系列資料予其參考"
+"959",83,"郭采帆(Chloe)",9921,"捷訊科技","捷訊#RF connector","E","E",10,"2017-02-16","2021-04-15","Time: 11:00
+1. Item + price：DF40 & U.FL & FH34SRJ
+2. Application + 產業別：網通
+3. End User:  USA & Taiwan
+
+拜訪RD Ben, 提供U.FL-R-SMT-1(80)樣品, 此款與IPEX (NHF1)相符, 符合2.4G/ 5G /7G, 會再安排測試後告知結果"
+"960",83,"郭采帆(Chloe)",1772,"彬松-TP","彬松#例行拜訪","E","E",10,"2016-07-18","2020-12-01","Time: 10: 30
+1. Item + price：FH34SRJ & TF31
+2. Application + 產業別： 小家電touch panel
+3. End User： JP
+""6. 拜訪內容 : 
+拜訪認識新Sourcer Amy, 介紹HRS FH34SRJ & TF31系列, 針對小家電BTW推薦DF57系列, 將先提供資料予其確認, 樣品待確認後申請"
+"961",83,"郭采帆(Chloe)",7178,"偉祺電機","偉祺#110K Regenerator","D","D",10,"2015-01-16","2022-06-06","Time: 13:30
+1. Item + price： SEMITEC 
+2. Application + 產業別: servo motor / IPC
+3. End User： TOSHIBA
+拜訪內容 : 
+拜訪認識RD Bob, 提供semitec目錄, 其確認後目前有使用鎖螺絲sensor, 類似'semitec 的screw housing sensor, 了解目前使用的是local (興勤), 將會在提供目前使用規格予我司參考"
+"962",83,"郭采帆(Chloe)",11403,"晟祥電子","晟祥電子#拜訪","E","E",10,"2021-10-18","2021-11-29","Time: 15:30
+1. Item + price：心電圖電極 + C TYPE Cable
+2.Application + 產業別：心律檢測器
+3. End User: 敦捷
+ 拜訪內容 : 
+拜訪工程曾佳聖, 討論敦捷報價問題, 會在與工廠討論後, 提供報價, 其提供3pcs樣品(type c+3個電極)敦捷測試後, pin define 量測OK, 但因ECG主機裝置還未完成, 所以敦捷尚未完成實測, 另討論僅使用type c+1個電極(手指夾&一個電極貼心臟), 會再與敦捷討論pin define後, 請其提供圖面予敦確認"
+"963",83,"郭采帆(Chloe)",480,"高瑞-TP","高瑞拜訪","C","E",10,"2020-09-24","2021-10-08","Time:13:30
+1. Item + price：GT18WB-14S/HU & GT25HA-2024SCF(01)
+2. Application + 產業別：車用線
+3. End User: 工研院
+拜訪內容 : 
+拜訪RD Bass, 詢問此案進度, 了解已有提供樣品予工研院確認, 但工研院尚在與電動車電動馬達合作廠商討論, 後續如有進展會在告知"
+"964",83,"郭采帆(Chloe)",3047,"泰金寶-TP","泰金寶#TF31系列","A","A",10,"2015-04-08","2022-05-24","Time: 15:00
+1. Item + price：DF13-6P-1.25DSA(75) /TM21R-5A-3232-LP(50)
+2. Application + 產業別： SSD tester
+3. End User： Toshiba
+4. PP時間、金額：ready
+5. MP時間、金額：ready  
+""6. 拜訪內容 : 
+拜訪sourcer Anita, 討論DF13-6P-1.25DSA(75) & TM21R-5A-3232-LP(50) Toray UL認證&交期問題, 目前是先通知Cal-comp此2款有使用Toray 塑料, 產品目前是正常生產, 會再請日本確認此2款Toray UL是否失效, 如果失效而要停止出貨, Anita會在與Toshiba討論後續問題, 也會請日本提供後續導入他料schedule; 另有關目前交期問題, 先前建議改使用DF13-6P-1.25DSA , 2款差異在包裝(DF13-6P-1.25DSA(75) 管狀包裝; DF13-6P-1.25DSA Pack包裝), Anita告知此2款料號不同, 必須重新打樣認證, Toshiba不願意, 會再請日本幫忙儘快安排出貨"
+"965",83,"郭采帆(Chloe)",982,"泰金寶CALCOMP-TP","泰金寶#LB7","A","A",10,"2021-10-29","2021-12-03","Time: 13:30
+1. Item + price：FH34SRJ-34S-0.5SH(50)
+2. Application + 產業別：Gateway
+3. End User: CommScope
+4. PP時間、金額：2022Q3
+5. MP時間、金額：2022Q4    FC: 150K /M     
+6. 拜訪內容 : 
+至深坑拜訪RD Kevin, 詢問此案問題, 了解此案是與CommScope合作屬JDM case, RF使用既有U.FL-R-SMT-1(10), 不需使用RF cable, 直接使用FPC TYPE 天線, FH34SRJ-34S-0.5SH(50) for display(usage: 1pcs), 樣品已有提供, 價格會在與sourcer討論"
+"966",83,"郭采帆(Chloe)",982,"泰金寶CALCOMP-TP","泰金寶#Poseidon","A","A",10,"2021-10-20","2021-10-20","Time: 13:30
+1. Item + price：TF38-30S-0.5SV(830)
+2. Application + 產業別：printer, 消費型
+3. End User: HP
+4. PP時間、金額：2022Q2
+5. MP時間、金額：2022Q4    FC: 50K /M     金額: NTD  23 萬/M
+6. 拜訪內容 : 
+拜訪sourcer Estela , 提供TF38-30S-0.5SV(830) 200PCS樣品for HP 新model Poseidon. 此案會在岳陽廠生產, 11初進行first build, 預計2022Q4量產, 會再提供後續schedule"
+"967",83,"郭采帆(Chloe)",982,"泰金寶CALCOMP-TP","泰金寶#FX12B-40P-0.4SV","A","A",10,"2021-11-11","2021-12-17","Time:11:00
+1. Item + price：FX12B-40P-0.4SV
+2. Application + 產業別: Dashboard
+3. End User:  gogoro
+4. PP時間、金額：2022Q1
+5. MP時間、金額：2022Q3     FC:5K/M
+""拜訪內容
+至深坑拜訪RD Ben, 詢問此案進度, 了解目前已在進行打樣, 預計最晚1月底前會提供 gogoro 確認, 並了解目前其公司有在計畫車載產品開發, 將會在提供車用相關產品予其參考"
+"968",83,"郭采帆(Chloe)",982,"泰金寶CALCOMP-TP","泰金寶#ARB PCA","A","A",10,"2021-11-04","2021-11-04","Time: 13:30
+1. Item + price：FH34SRJ-34S-0.5SH(50)
+2. Application + 產業別：Gateway
+3. End User: CommScope
+4. PP時間、金額：2022Q3
+5. MP時間、金額：2022Q4    FC: 150K /M     
+6. 拜訪內容 : 
+與HRS Annika一起至深坑拜訪sourcer Elisa , 並提供DF40C-10DP-0.4V(51) 100pcs樣品for Lexmark新案, 預計12月底會在C1廠進行NPI試產, 因此款料交期不好, 後續會依schedule儘快安排下單"
+"969",83,"郭采帆(Chloe)",982,"泰金寶CALCOMP-TP","泰金寶#Victoria","A","A",10,"2021-12-03","2022-03-11","Time:14:00 (天母)
+1. Item + price：FH12-24S-0.5SVA(54) & TF38-30S-0.5SV(830) & TF38-32S-0.5SV(830)
+2. Application + 產業別: printer
+3. End User:  HP
+4. PP: 2022Q2
+5. MP: 2022Q3     FC: 30K/M
+""拜訪內容
+與HRS Annika一起拜訪sourcer Iris, 討論交期問題, 因目前Nylon PA66原材料交期尚須6個以上, 建議以TF38替代FH12系列, Iris已有將相關資料提供HP, 需待HP確認後才能變更, 但因目前5月初需提供試產1K套, Annika將會幫忙與日本確認, 待確認後, Iris會再提供1k套訂單"
+"970",83,"郭采帆(Chloe)",982,"泰金寶CALCOMP-TP","泰金寶#Marconi","A","A",10,"2021-12-15","2022-03-24","Time:13:30
+1. Item + price：FH34SRJ-24S-0.5SH(50)
+2. Application + 產業別: printer
+3. End User:  HP
+4. PP: 2022Q2
+5. MP: 2022Q3     FC: 80K/M 
+""拜訪內容
+拜訪sourser Iris, 了解此案(Marconi), 原使用molex 54550-2471, 確認規格後, 推薦FH34SRJ-24S-0.5SH(50), 此款其先前verifone產品有使用過, 將再提供2D & SPEC予其, Iris會再請負責RD確認, 待確認後提供樣品; 另詢問FH12系列目前交期問題, 目前還需6個月以上, 因for Lexmark 有FH12-32S-0.5SVA(54) 8K需求, 因交期很急, 會在確認後提供訂單"
+"971",83,"郭采帆(Chloe)",982,"泰金寶CALCOMP-TP","泰金寶#Sayan","A","A",10,"2021-12-27","2021-12-27","Time: 13:30
+1. Item + price：TF38-30S-0.5SV(830)
+2. Application + 產業別：printer
+3. End User: HP
+4. PP時間、金額：2022Q1
+5. MP時間、金額：2022Q2    FC: 30K /M     
+6. 拜訪內容 : 
+拜訪sourcer Iris, 提供TF38-30S-0.5SV(830) ---100pcs 樣品予其, 樣品將會再提供給岳陽進行打樣, 預計2022Q2進行MP, 後續會再提供此案schedule"
+"972",83,"郭采帆(Chloe)",982,"泰金寶CALCOMP-TP","泰金寶#Landscape","A","A",10,"2021-12-27","2022-01-21","Time: 15:30
+1. Item + price：FH67-50S-0.5SV & TF38-32S-0.5SV(830) & DF50-30DP-1V(51) & DF40C-10DP-0.4V(51)
+2. Application + 產業別：printer
+3. End User: Lexmark
+4. PP時間、金額：2022Q1
+5. MP時間、金額：2022Q3    FC: 20K /M     
+6. 拜訪內容 : 
+帶HRS Annika一起拜訪sourcer Jones & Cathy, 提供FH67-50S-0.5SV & TF38-32S-0.5SV(830) & DF50-30DP-1V(51) & DF40C-10DP-0.4V(51) 各100套樣品, 並討論交期問題, 目前除nylon pa66缺料外, 磷青銅也缺料, 主要是因自動車大量使用, 所以造成交期較長, 待schedule確認後會儘快下單"
+"973",83,"郭采帆(Chloe)",982,"泰金寶CALCOMP-TP","泰金寶#MDC","A","A",10,"2022-02-14","2022-04-26","Time: 13:30
+1. Item + price：FH63S-40S-0.5SH & FH67-50S-0.5SV
+2. Application + 產業別：printer
+3. End User: Lexmark
+4. PP時間、金額：2022Q3
+5. MP時間、金額：2023Q1    FC: 30K /M     
+6. 拜訪內容 : 
+拜訪sourcer Estela 提供FH67-50S-0.5SV 100pcs樣品, 將會提供給長安廠進行打樣, 另Lexmark新案Landscape 將NPI(試產), 將會先下試產訂單, 因近期交期不好, 會在請HRS幫忙"
+"974",83,"郭采帆(Chloe)",982,"泰金寶CALCOMP-TP","泰金寶#SF400","A","A",10,"2022-01-22","2022-01-22","Time: 13:30
+1. Item + price： DF40HC(2.5)-30DS-0.4V(70) & DF40C-30DP-0.4V(51) & DF40C-30DS-0.4V(51)
+2. Application + 產業別：行車紀錄器
+3. End User: Lytx
+4. PP時間、金額：2022Q3
+5. MP時間、金額：2022Q4   FC: 100K set /M     
+""6. 拜訪內容 : 
+帶HRS Annika一起拜訪Sourcer Iris, 討論新案問題, 了解此案會使用DF40HC(2.5)-30DS-0.4V(70) & DF40C-30DP-0.4V(51) /  DF40C-30DS-0.4V(51) & DF40C-30DP-0.4V(51) 2組BTB, 需求100套樣品打樣, Annika同意提供, 但因目前除nylon pa66缺料外, 磷青銅也缺料, 主要是因自動車大量使用, 所以造成交期較長, 樣品Annika會幫忙push, 儘快安排提供"
+"975",83,"郭采帆(Chloe)",982,"泰金寶CALCOMP-TP","泰金寶#Tassel","A","A",10,"2022-02-08","2022-02-08","Time:13:40
+1. Item + price：TF38-30S-0.5SV(830)
+2. Application + 產業別: printer
+3. End User:  HP
+4. PP: 2022Q2
+5. MP: 2023Q1     FC: 20K/M
+""拜訪內容
+拜訪深坑sourcer Estela, 提供TF38-30S-0.5SV(830) 150pcs樣品 此 new model: Tassel, 這周會安排提供給岳陽廠進行first build, 預計MP時間為2023Q1, 會再提供後續schedule, 持續follow進度"
+"976",83,"郭采帆(Chloe)",982,"泰金寶CALCOMP-TP","泰金寶#Columbia","A","A",10,"2022-03-10","2022-03-16","Time: 13:30
+1. Item + price：U.FL-R-SMT-1(10)
+2. Application + 產業別： DCS
+3. End User： WDC
+4. PP時間、金額：2022Q4
+5. MP時間、金額：2023Q1  
+""6. 拜訪內容 : 
+拜訪sourcer Eliza, 提供U.FL-R-SMT-1(10) 800pcs樣品, 將會安排打樣予WDC承認, 後續訂單會以U.FL-R-SMT-1(10) 下單, 了解此案後續會在泰國廠生產, 菲律賓廠後續將不再生產, 轉移至泰國廠"
+"977",83,"郭采帆(Chloe)",982,"泰金寶CALCOMP-TP","泰金寶#5G Echo","A","A",10,"2022-03-13","2022-05-20","Time: 13:40
+1. Item + price： KP13B-SF-PEJ(800) & U.FL-R-SMT-1(10)
+2. Application + 產業別：5G wifi module
+3. End User: Pivotal
+4. PP時間、金額：2022Q4
+5. MP時間、金額：2023Q1   FC: 20K set/M    
+""6. 拜訪內容 : 
+拜訪sourser Cathy, 提供KP13B-SF-PEJ(800) & U.FL-R-SMT-1(10) 各100套樣品, 將會先提供給泰國廠先安排打樣, 因目前此2款交期需半年以上, 會再確認後續狀況, 提供schedule &需求數量, KP13B-SF-PEJ(800)此款價格部分會與HRS討論後提供"
+"978",83,"郭采帆(Chloe)",982,"泰金寶CALCOMP-TP","泰金寶#LFP","A","A",10,"2022-03-13","2022-05-09","Time: 14:00
+1. Item + price：TF31-40S-0.5SH(800)
+2. Application + 產業別：printer, 消費型
+3. End User: HP
+4. PP時間、金額：2022Q4
+5. MP時間、金額：2023Q1   FC: 150K /M     
+""6. 拜訪內容 : 
+拜訪Sourcer Iris, 提供TF31-40S-0.5SH(800) 200pcs樣品, 會再安排寄到其蘇州廠, 預計5月會進行first build, 另討論Lexmark 新案first build問題, 因近期物料問題, 交期較長, 約8-10個月, 會在確認後續schedule, 提供試產訂單"
+"979",83,"郭采帆(Chloe)",982,"泰金寶CALCOMP-TP","泰金寶#660P","A","A",10,"2022-03-16","2022-03-16","Time: 15:30
+1. Item + price：DF3EA-6P-2V(51)
+2.Application + 產業別：POS 
+3. End User: VERIFONE
+4. PP時間、金額：2022Q3
+5. MP時間、金額：2023Q1   FC: 50K/M       
+""6. 拜訪內容 
+拜訪認識CR sourser 課長林秋燕, 提供DF3EA-6P-2V(51) 500PCS樣品, 了解此案會在泰國廠生產, 預計4月底會先進行frist build, 預計8月會進行NPI試產, 價格部分將向HRS申請, 待試產OK後, 會提供訂單, 持續follow進度"
+"980",83,"郭采帆(Chloe)",982,"泰金寶CALCOMP-TP","泰金寶#Akebono","A","A",10,"2022-03-24","2022-05-24","Time: 13:30
+1. Item + price：DF11-8DP-2DSA(08) & DF17(3.0H)-30DS-0.5V(57) &DF11-18DP-2DSA(08) &DF11CZ-12DP-2V(27)
+2. Application + 產業別：A3 Laser printer, 消費型
+3. End User: FUJIFILM
+4. PP時間、金額：2022Q3
+5. MP時間、金額：2023Q1    FC: 6K SET/M     
+""6. 拜訪內容 : 
+拜訪sourser Estela, 討論此案因DF11-8DP-2DSA(08) &DF11-18DP-2DSA(08)有使用Toray 塑料, 現日本HRS是要求我司通知客戶此消息, 目前此2款還是正常生產, Estela要求日本要確認此2款Toray UL是否失效, 如果失效而要停止出貨, Cal-comp 會在與FUJIFILM討論是否簽回通知信, 並要確認日本導入其他塑料的schedule; 另討論交期問題, 目前nylon缺料, 交期無法回覆, 但目前他廠都無nylon缺料問題, 要請日本儘快解決此問題, Estela希望能再月底前提供交期"
+"981",83,"郭采帆(Chloe)",982,"泰金寶CALCOMP-TP","泰金寶#SWA011","A","A",10,"2022-04-01","2022-05-09","Time: 15:30
+1. Item + price：FH34SRJ-5S-0.5SH(50)
+2.Application + 產業別：啤酒桶溫度偵測計
+3. End User: UNABIZ
+4. PP時間、金額：2022/7
+5. MP時間、金額：2022/9   FC: 80K LOT
+""6. 拜訪內容 
+拜訪Sourcer Cathy, 提供FH34SRJ-5S-0.5SH(50) 150pcs樣品, 將會安排寄到泰國廠打樣測試, 價格部分會再依其提供T/P向HRS申請"
+"982",83,"郭采帆(Chloe)",982,"泰金寶CALCOMP-TP","泰金寶#LS","A","A",10,"2022-04-01","2022-04-21","Time: 15:30
+1. Item + price：FH35C-9S-0.3SHW(50)
+2. Application + 產業別：Printer, 消費型
+3. End User: HP
+4. PP時間、金額：2022Q4
+5. MP時間、金額：2023Q1   FC: 80K /M     
+""6. 拜訪內容 : 
+拜訪Sourcer Estela, 提供FH35C-9S-0.3SHW(50) 100PCS樣品予其, 將會先安排打樣予HP確認; 另提供DF11-18DP-2DSA(08) 120套(先前已提供30套), DF11-8DP-2DSA(08)尚缺原料, 會再請日本幫忙"
+"983",83,"郭采帆(Chloe)",982,"泰金寶CALCOMP-TP","泰金寶#FR36","A","A",10,"2022-05-20","2022-05-20","Time: 15:30
+1. Item + price：DM3AT-SF-PEJM5 
+2. Application + 產業別：Air conditioner
+3. End User: Friedrich
+4. PP時間、金額：ready
+5. MP時間、金額：Ready   FC: 14K/M    
+""6. 拜訪內容 : 
+拜訪sourser Jones & Iris, 目前有一micro SD card需求, 了解此案原使用ALPS, 但此款將停產. 所以須尋替代料, 規格為PUSH & PUSH TYPE, 推薦DM3AT-SF-PEJM5, 此款先前有推薦給其他部門使用, 將先提供資料予其參考, 待確認後申請樣品"
+"984",83,"郭采帆(Chloe)",982,"泰金寶CALCOMP-TP","泰金寶#Vassel","A","A",10,"2022-04-13","2022-04-13","Time:13:50
+1. Item + price：TF38-30S-0.5SV(830)&TF38-32S-0.5SV(830)
+2. Application + 產業別: printer
+3. End User:  HP
+4. PP: 2022Q2
+5. MP: 2023Q1     FC: 120K/M
+""拜訪內容
+拜訪sourcer Iris , 提供TF38-32S-0.5SV(830) 500pcs樣品 for 此 new model: Vassel, 因此款為緊急追加使用, 預計下周泰國廠會進行first build, 已請buyer提供1k訂單, 交期部分會再請HRS幫忙"
+"985",83,"郭采帆(Chloe)",982,"泰金寶CALCOMP-TP","泰金寶 #Delsol","A","A",10,"2022-06-10","2022-06-17","Time:13:50
+1. Item + price：TF38-30S-0.5SV(830)
+2. Application + 產業別: printer
+3. End User:  HP
+4. PP: 2022Q2
+5. MP: 2023Q2    FC: 150K/M
+""拜訪內容
+拜訪sourser Estela , 提供TF38-30S-0.5SV(830) 500pcs 樣品for HP new model: Delsol, 會在安排寄到岳陽廠打樣, 另有關於近期因其他供應商有紙箱破損問題產生, 所以Cal-comp規定, 只要外箱紙箱有變形&壓損, 都會以退貨處理, 所以出貨前須確認紙箱, 並須拍照佐證紙箱完整性, 會再請香港特別注意"
+"986",83,"郭采帆(Chloe)",982,"泰金寶CALCOMP-TP","泰金寶#MS114","A","A",10,"2022-06-10","2022-06-17","Time:15:30
+1. Item + price： DF12NC(4.0)-30DP-0.5V(51) /DF17(4.0)-40DP-0.5V(57)
+2. Application + 產業別: 測試儀器
+3. End User:  MSK
+4. PP: 2022Q2
+5. MP: 2023Q1    FC: 3K SET /M
+""拜訪內容
+拜訪sourcer Anita, 提供 DF12NC(4.0)-30DP-0.5V(51) /DF17(4.0)-40DP-0.5V(57) 各100套樣品, 此案原有使用DF12D(4.0)-30DP-0.5V(80)此款已停產, 也無替代料, Anita會在想終端說明, 樣品會在下周安排寄到泰國廠先打樣, 後續持續follow進度; 另討論有關於Lexmark FH12-24S-0.5SVA(54) 訂單交期問題, 因此款有用到nylon PA66原材料, Anita希望最晚在7月底安排出貨, 會在請日本幫忙"
+"987",83,"郭采帆(Chloe)",982,"泰金寶CALCOMP-TP","泰金寶#Sparrow","A","A",10,"2022-06-10","2022-06-10","Time:14:30
+1. Item + price：FX16-31S-0.5SV
+2. Application + 產業別: printer
+3. End User: KM(Konica Minolta) 
+4. PP: 2022Q2
+5. MP: 2023Q2    FC: 20K/M
+""拜訪內容
+拜訪sourcer Jones, 了解KM 舊機種是在日本生產, 所以是透過日本代理商”STX JAPAN TOKYO” 交貨, 目前KM有在評估將部分model移至海外生產, 此新機種將會由Cal-comp生產, 需求100pcs樣品, 在向HRS確認價格&申請樣品後提供"
+"988",83,"郭采帆(Chloe)",11140,"核協儀器","核協儀器#拜訪","E","E",10,"2019-10-08","2020-11-26","Time: 13:10
+1. Item + price: FX23 & FH34SRJ
+2. Application + 產業別：儀器設備
+3. End User：JP
+拜訪內容
+拜訪認識新RD Ben, 了解原RD 宋杲宸已離職, 介紹HRS functionMax FX23 & FH34SRJ, 將先提供資料予其參考, 待確認後申請樣品"
+"989",83,"郭采帆(Chloe)",1626,"哲固ACULA-TP","哲固#O510AP","A","A",10,"2013-01-04","2022-05-18","Time:13:30
+1. Item + price：DM3AT-SF-PEJM5
+2. Application + 產業別: IPC
+3. End User：USA
+4. PP時間、金額：2022Q4
+5. MP時間、金額：2023Q1  FC: 2K/M  
+""拜訪內容
+拜訪RD Eric, 提供DM3AT-SF-PEJM5(push push) 5pcs樣品予其確認, 會在核對後請我司提供報價, 另詢問此款目前交期, 因缺料問題, 交期需達9-10個月, 而另一款PUSH PULL (DM3CS-SF)交期也是相同, Eric會在確認後告知"
+"990",83,"郭采帆(Chloe)",11381,"恒大","恒大#拜訪","E","E",10,"2021-07-30","2021-09-24","Time: 13:30
+1. Item + price： FH34SRJ-45S-0.5SH(50)
+2. Application + 產業別: Panel
+3. End User: USA 
+4. PP時間、金額：2021Q4
+5. MP時間、金額：2022Q1  FC: 10k/m    
+拜訪江忠穎並提供FH34SRJ-45S-0.5SH(50) 10PCS樣品, 此款無卡扣, 會在依我司提供建議尺寸進行打樣, 並提供維馳確認"
+"991",83,"郭采帆(Chloe)",11458,"茂德科技","茂德#拜訪","E","E",10,"2022-03-23","2022-04-20","Time:10:30
+1. Item + price：FH34SRJ-10S-0.5SH(50) & FH35C-51S-0.3SHW(50)
+2. Application + 產業別：FA CAMERA
+3. End User： USA &EUR
+4. PP時間、金額：2022Q4
+5. MP時間、金額: 2023Q1   FC: 2K SET/M
+""6. 拜訪內容 : 
+拜訪RD sourcer Roger & 認識sourcer Time:13:30
+1. Item + price：FH34SRJ-10S-0.5SH(50) & FH35C-51S-0.3SHW(50)
+2. Application + 產業別：FA CAMERA
+3. End User： USA &EUR
+4. PP時間、金額：2022Q4
+5. MP時間、金額: 2023Q1   FC: 2K SET/M
+""6. 拜訪內容 : 
+拜訪RD Roger & 認識sourser 陳慧玲, 並送樣品訂單FH34SRJ-10S-0.5SH(50) & FH35C-51S-0.3SHW(50) 各1K, 預計下周會先打300套, 因交期不好, 約20周, 後續需求會儘快確後提供訂單; 另確認其目前使用抽屜式FPC, layout與我司不同, 板子已洗好, 後續新案會再請我司推薦產品, 另SEMITEC 目錄已有提供給負責RD, 會再請其確認是否有符合其需求產品"
+"992",83,"郭采帆(Chloe)",10784,"美超微","美超微#拜訪","E","E",10,"2018-08-10","2020-02-26","Time: 15:00
+1. Item + price：IX
+2. Application + 產業別：servor FOR 高速電腦中心 & 資料中心
+3. End User：USA
+4. PP時間、金額：
+5. MP時間、金額:   
+""6. 拜訪內容 : 
+拜訪sourcer Olivia, 提供2020新目錄, 介紹IX系列, 將先提供資料予其確認"
+"993",83,"郭采帆(Chloe)",11433,"科利德","科利德#拜訪","E","E",10,"2022-01-12","2022-06-06","Time: 15:30
+1. Item + price：DF60-3P-10.16DSA(27) & DF60A-3S-10.16C & DF60-8SCFA
+2. Application + 產業別：儀器設備
+3. End User： JP
+拜訪內容 : 
+拜訪RD 劉名彬, 討論DF60-3P-10.16DSA(27) 規格問題, 如打滿3pin 使用8AWG線, 可達45A per PIN, 會再請其線材廠確認, 另了解其目前使用圓形接頭為M12, 介紹HRS HR10A& HR25系列, 此2款是目前較多客戶在使用, 將先提供資料予其參考"
+"994",83,"郭采帆(Chloe)",11257,"津日","津日#拜訪","E","E",10,"2020-09-13","2022-03-09","Time:15:30
+1. Item + price：BM28B0.6-6DP/2-0.35V(51) & BM28B0.6-6DS/2-0.35V(51)  
+2. Application + 產業別: 血氧機
+3. End User:  麗臺
+4. PP時間、金額：2022Q2
+5. MP時間、金額：2022Q3  
+""拜訪內容
+拜訪sourcer 謝麗君, 了解此案目前有在與麗臺談合作, 麗臺請其打樣20套, 提供 BM28B0.6-6DP/2-0.35V(51) & BM28B0.6-6DS/2-0.35V(51) 樣品, 會再提供麗臺做確認"
+"995",83,"郭采帆(Chloe)",9938,"建倚科技","建倚#例行拜訪","E","E",10,"2017-04-14","2020-11-05","Time: 15:00
+1. Item + price：3560-16S(50) & 3560-16P-PG(50)
+2. Application + 產業別： SCANNER
+3. End User： JP
+拜訪內容 : 
+拜訪認識Kevin (Cal-comp Iris介紹), 了解因終端客戶有HRS產品需求, 因此2款已EOL, 會再提供替代料資料予其參考(3560-16S(30)), 會再與終端客戶討論後告知, 後續如有HRS需求會再向我司詢問"
+"996",83,"郭采帆(Chloe)",237,"南東NANTON-TP","南東#MS-156C","C","D",10,"2015-04-20","2020-12-28","Time: 15:30
+1. Item + price:DF59-3P-2C & DF59-22PCFA
+2. Application + 產業別：LED for 冷凍櫃
+3. End User: JP
+ 拜訪內容 : 
+拜訪Jerry, 了解目前其大部分產品都是OEM, 因數量需求不多, 大都是由終端客戶供料, 如後續有需求會再告知; 另推薦PPTC, 將先提供資料予其參考"
+"997",83,"郭采帆(Chloe)",2295,"南京資訊-TP","南京資訊#POS","E","E",10,"2015-11-02","2022-01-20","Time: 10:30
+1. Item + price：IX61G-A-10P & IX40G-A-10S-CV(7.0)
+2. Application + 產業別：工業電腦+儀器與設備
+3. End User： USA
+拜訪內容 :
+拜訪RD李政翰, 提供IX61G-A-10P 5PCS樣品予其打樣測試, 線端樣品部分待其確認長度後會再請大朋幫忙打線"
+"998",83,"郭采帆(Chloe)",11426,"冠捷","冠捷#拜訪","E","E",10,"2021-12-22","2021-12-22","Time:10:40
+1. Item + price：FH52K
+2. Application + 產業別：車載Panel
+ 
+拜訪RD Tom(原淳安RD), 了解其目前負責車載Panel部分, panel 目前為7~15"", PIN數大都使用40~50PIN, 介紹FH52K系列, 此溫度可達125度, 帶卡扣為車規產品, 將先提供資料予其參考"
+"999",83,"郭采帆(Chloe)",10802,"保立新","保立新#拜訪","E","E",10,"2018-08-22","2020-07-20","Time: 15:30
+1. Item + price：DF60/DF22
+2. Application + 產業別：自動化停車設備
+3. End User： ODM
+. 拜訪內容 : 
+拜訪認識RD Ben, 提供HRS enerbee目錄並介紹HRS產品,了解大都使用使用大安培B TO W Connector, ,將先提供DF60/DF22資料予其參考, 後續待確認規格後提供2D & spec"
+"1000",83,"郭采帆(Chloe)",6249,"阜聯","阜聯 for 車用harness","C","C",10,"2017-03-16","2021-10-28","Time:15:30
+拜訪內容 : 
+拜訪PM Cindy, 詢問有關鴻華目前推出3款電動車其公司是否有接到此案, 雖然已有加入MIH, 但此3款未收到任何請其打線需求; 了解其目前車用線端連接器大都是車廠指定(胡連&貿聯), 後續如有任何需求非HRS connector我司都能待尋"
+"1001",83,"郭采帆(Chloe)",598,"長樺-TP","長樺#SMT & DIT","E","E",10,"2015-06-17","2022-05-18","Time: 15:50
+1. Item + price：TF31-20S-0.5SH(800) & TF31-25S-0.5SH(800)
+2. Application + 產業別： SMT & DIT 加工
+3. End User：Taiwan
+4. PP時間、金額：2022Q3
+5. MP時間、金額：2022Q4       FC: 10K/SET
+6. 拜訪內容 : 
+拜訪Sourcer 李韻如, 了解目前有在尋替代料, 原使用Kyocera pitch:0.5mm/20 &25pin, 推薦使用TF31-20S-0.5SH(800) & TF31-25S-0.5SH(800), 此2款是在韓國生產, 交期約16-18周, 會再提供資料予其核對, 待確認後申請樣品"
+"1002",83,"郭采帆(Chloe)",3770,"長新ARICO-TP","長新#DF13-20DP-1.25V","A","A",10,"2015-03-25","2022-05-16","Time:15:30
+1. Item + price：CX系列 & TF38系列
+2. Application + 產業別：熱澆道控制器螢幕, IPC
+3. End User： 中國/印度
+4. PP時間、金額：2022Q4
+5. MP時間、金額: 2023Q1   FC: 2K SET/M
+""6. 拜訪內容 : 
+拜訪RD魏瑞中, 提供TF38-32S-0.5SV(830) 20pcs樣品予其核對, 價格部份會再請採購提供T/P予我司參考, 交期部分因近期原物料缺料, 交期需24~26周, 會在確認後告知結果"
+"1003",83,"郭采帆(Chloe)",18,"金寶KINPO-TP","金寶#CX","A","A",10,"2021-11-22","2021-11-22","Time:15:30
+1. Item + price：CX
+2. Application + 產業別: 硬碟
+3. End User:  WD
+""拜訪內容
+拜訪sourcer Iris & Jones, 討論因先前WD新案有使用ZX360 & ZX62D系列問題, 日本告知希望能將USB TYPE都改為TYPE C(因歐盟明年度開始要全面使用TYPE C), 將會先提供資料與其參考, 除WD案外, 其有使用USB TYPE希望後續也能改使用TYPE C, 會在與終端進行討論"
+"1004",83,"郭采帆(Chloe)",18,"金寶KINPO-TP","新世代#智慧語音助理","A","A",10,"2022-02-08","2022-03-02","Time: 13:50
+1. Item + price：CX90MWD2-24P & FH34SRJ-12S-0.5SH(50) 
+2.Application + 產業別：智慧語音助理
+3. End User: OBM
+4. PP時間、金額：2022Q3
+5. MP時間、金額：2022Q4  FC: 10K/M     
+""6. 拜訪內容 : 
+拜訪 RD James, 提供CX90MWD2-24P & FH34SRJ-12S-0.5SH(50) 各10pcs樣品予其確認, 將會先核對確認, 價格會再提供其參考, 交期因疫情問題約要20周, 會再確認後告知結果"
+"1005",83,"郭采帆(Chloe)",18,"金寶KINPO-TP","金寶#P22","A","A",10,"2021-10-20","2021-11-04","Time: 15:30
+1. Item + price：FH35C-9S-0.3SHW(50)
+2. Application + 產業別：消費型
+3. End User: USA
+4. PP時間、金額：2022Q1
+5. MP時間、金額：2022Q3    FC: 50K /M     
+6. 拜訪內容 : 
+與HRS Annika一起拜訪sourcer Lisa , 提供FH35C-9S-0.3SHW(50) 200PCS樣品, 報價部分已有向日本討論, 會再提供其確認, 預計11月底會先進行打樣, 後續會在提供schedule"
+"1006",83,"郭采帆(Chloe)",357,"肯懋-TP","肯懋 拜訪客戶","E","E",10,"2014-12-22","2022-01-11","Time: 13:30
+1. Item + price：HR10A-7R-6PB(74)
+2. Application + 產業別：FA camera
+3. End User: USA
+拜訪內容 : 
+拜訪 RD Antony, 提供HR10A-7R-6PB(74) 2pcs 樣品予其參考, 因疫情影響, 此款目前L/T約30周, 價格部份待其確認後會在提供其sourcer, 另介紹IX系列, 此可以取代RJ45, 體積小帶LOCK, 目前已有日本客戶平河使用, 歐美國家也在推廣, 將先提供資料予其參考"
+"1007",83,"郭采帆(Chloe)",9576,"泓博","泓博#例行拜訪","E","E",10,"2016-06-27","2021-03-23","Time: 13:10
+1. Item + price：U.FL & FH26W&FH35C系列
+2. Application + 產業別：Wireless module
+3. End User： USA
+拜訪內容 : 
+拜訪RD Kevin, 提供U.FL-R-SMT-1(80) 樣品予其測試, 另介紹負責車用線材RD Mike, 介紹HRS 車用產品GT17 & GT32 & ZE05系列, 將先提供資料予其參考"
+"1008",83,"郭采帆(Chloe)",7331,"泓淋-TP","泓淋#初次拜訪(手機/機上盒)","C","E",10,"2015-04-02","2021-10-06","Time: 15:30
+1. Item + price：U.FL-R-SMT-1(10) & DF40
+2. Application + 產業別： wifi智能天線module for智能家電
+3. End User： USA & Taiwan
+4. PP: 2022Q1
+5. MP:2022Q3    FC: 5K/M
+ 拜訪內容 : 
+拜訪RD 陳正紀, 提供DF40C(2.0)-30DS-0.4V(51) & DF40C-30DP-0.4V(51) 10套樣品會先安排打樣;  另會在提供U.FL-R-SMT-1(10) 10PCS予其, 會在與IPEX (NHF1)做核對"
+"1009",83,"郭采帆(Chloe)",545,"明和-TP","明和#NA","C","C",10,"2015-01-14","2022-05-03","Time: 15:30
+1. Item + price：DF57H-2P-1.2V(21) & DF57H-2S-1.2C & DF57-2830SCF
+2. Application + 產業別： IR感測module
+3. End User： EUR & USA
+4. PP時間、金額：2022Q3
+5. MP時間、金額：2022Q4     FC: 10K/M     
+""6. 拜訪內容 : 
+拜訪RD宋俊誠, 提供DF57H-2P-1.2V(21) & DF57H-2S-1.2C & DF57-2830SCF 5套樣品, 會再核對後告知結果, 待確認後申請價格"
+"1010",83,"郭采帆(Chloe)",10885,"承德","承德#拜訪","E","E",10,"2018-12-04","2020-09-14","Time: 13:30 
+1. Item + price： QR/P-16P-C(21) / QR/P-16S-C(21) /QR/P-XC-211(12)
+2. Application + 產業別：電池測試設備
+3. End User: USA
+4. PP時間、金額：2020Q4
+5. MP時間、金額：2021Q1          FC: 300 SET/LOT   金額: NTD 10萬
+拜訪Sourcer 賴玉茹, 了解新案預計使用QR/P-16P-C(21) / QR/P-16S-C(21) /QR/P-XC-211(12), 將先提供資料&報價予其參考"
+"1011",83,"郭采帆(Chloe)",3866,"宗盈國際JOIN LINK-TP","宗盈#NA","E","E",10,"2015-03-30","2022-01-11","Time: 15:30
+1. Item + price: GT25系列
+2. Application + 產業別：車載數位接收盒
+3. End User：China & 東南亞 
+拜訪內容 : 
+拜訪Sourcer Ariel, 提供GT25H2-24DP-2.2V 5pcs樣品予其參考, 了解目前因車用缺料已緩解, 目前新案也會開始進行設計, 了解線材目前是由樺晟打線, 待其確認後會在與樺晟聯繫"
+"1012",83,"郭采帆(Chloe)",10817,"奇磊","奇磊#拜訪","E","E",10,"2018-09-13","2022-03-03","Time: 13:30
+1. Item + price：CX & FX23
+2. Application + 產業別：KVM Switch
+3. End User：USA & EUR
+拜訪內容 : 
+拜訪RD 胡中志, 提供CX90B-16P 10pcs樣品予其核對, 此款是目前較多人使用, 線端部分16 或24pin皆可使用, 若有線端需求也能提供, 會在確認後告知"
+"1013",83,"郭采帆(Chloe)",5311,"坦億DOUBLEI-TP","坦億#例行拜訪","E","E",10,"2018-07-24","2021-01-21","Time: 10:30
+1. Item + price: FH34SRJ-50S-0.5SH(50)
+2. Application + 產業別：Car Video
+3. End User：China & 東南亞    
+拜訪RD Kevin, 提供FH34SRJ-50S-0.5SH(50) 5PCS樣品予其測試, 價格部分會再請採購提供T/P予我司參考,"
+"1014",83,"郭采帆(Chloe)",9937,"京微","京微#拜訪","E","E",10,"2017-03-13","2021-11-24","Time: 15:30
+1. Item + price：DF51A & DF51K & DF50
+2. Application + 產業別: 工具機
+3. End User： USA
+ 拜訪內容 : 
+拜訪認識RD Ken, 了解其確認我司提供HRS FunctionMAX產品目錄後, 想了解BTW 帶LOCK資料, 介紹DF51A & DF51K & DF50系列, 並告知差異性, 將先提供資料予其參考, 會在確認後請我司提供樣品"
+"1015",83,"郭采帆(Chloe)",9609,"町洋","町洋#例行拜訪","C","C",10,"2016-07-29","2021-11-26","Time: 11:00
+1. Item + price：BH12 series
+2. Application + 產業別：儀器設備
+3. End User： USA
+拜訪內容 : 
+拜訪sourcer 陳信瑰, 提供12月FA show邀請函, 其會再安排去參觀, 介紹HRS新款圓形接頭BH12 series, 此款為有防水, 小型化且為複合型帶power & 信號, power可達20A, 將先提供資料予其參考"
+"1016",83,"郭采帆(Chloe)",10798,"迅智","迅智#拜訪","E","E",10,"2018-08-21","2022-02-15","Time: 13:30
+1. Item + price：HR10A-10P-10S(73) & HR10A-7R-6PB(73)
+2. Application + 產業別：自動貼標機
+3. End User：USA & Taiwan
+4. PP時間、金額：2022Q2
+5. MP時間、金額：預計2022Q3  
+6. 拜訪內容：
+拜訪RD周正, 提供HR10A-10P-10S(73) & HR10A-7R-6PB(73) 各2pcs樣品予其參考, 會再安排測試, 線端部分其會先請其配合線材廠先打樣, 待確認後會在提供線材長度,請大朋提供報價予其參考"
+"1017",83,"郭采帆(Chloe)",4987,"系統電子-TP","系統電子-拜訪","E","E",10,"2019-06-11","2020-08-21","1.Time：13:30
+2. Item：DF52-4S-0.8H(21) &FH35C-51S-0.3SHW(50)
+3. Application：儲能設備
+4. End User：Europe
+5. PP時間：2020Q4
+6. MP時間：2021Q1     FC: 5K/M    金額: NTD 7萬/M
+7. 拜訪內容 :  
+拜訪sourcer Jean, 提供DF52-4S-0.8H(21) &FH35C-51S-0.3SHW(50) 各10套樣品for 新案M3.2, 將會先安排打樣測試"
+"1018",83,"郭采帆(Chloe)",5606,"玖銳POWERRAY-TP","玖銳#PR5001","E","D",10,"2013-01-02","2022-03-09","Time: 11:00
+1. Item + price：FH34SRJ-4S-0.5SH(50) & FH34SRJ-40S-0.5SH(50)
+2. Application + 產業別：智能家居搖控器
+3. End User: USA &EUR
+4. PP時間、金額：2022Q3
+5. MP時間、金額：2022Q4   FC: 3K/M   
+拜訪sourcer Joyce, 提供FH34SRJ-4S-0.5SH(50) & FH34SRJ-40S-0.5SH(50) 各20套樣品, 將會先安排打樣提供終端確認, 價格會再提供其參考"
+"1019",83,"郭采帆(Chloe)",10780,"沖速","沖速#拜訪","E","E",10,"2020-10-22","2020-11-27","Time: 10:30
+1. Item + price：HR41A-17WBP-3PC &HR10A-10P-10P(73) &HR41A-17WBRA-3SC &HR10A-10R-10S(71)
+2. Application + 產業別：線材加工
+3. End User: USA
+4. PP時間、金額：2021Q1 
+5. MP時間、金額：2021Q2  FC: 500 SET /LOT  
+拜訪sourcer Jimmy, 討論此案問題, HR41A-17WBP-3PC &HR10A-10P-10P(73) &HR41A-17WBRA-3SC &HR10A-10R-10S(71)價格會再向HRS申請"
+"1020",83,"郭采帆(Chloe)",9106,"沅聖-TP","沅聖#拜訪","E","E",10,"2021-01-13","2022-03-29","Time: 13:30
+1. Item + price：DF50A-8P-1V(51) & DF50A-8S-1C & DF50-2830SCFA
+2. Application + 產業別：電子鎖
+3. End User: USA
+拜訪RD Mike, 提供DF50A-8P-1V(51) & DF50A-8S-1C & DF50-2830SCFA 各5套樣品予其先核對, 價格會再依其T/P向HRS申請, 另詢問type c問題for 智能家居產品, 目前較多人使用CX90B-16P (Right angle/double-row/SMT type)此款, 價格也較優勢, 會再提供2D & 3D &SPEC予其核對"
+"1021",83,"郭采帆(Chloe)",112,"宏正-TP","宏正自動科技專案","E","E",10,"2016-03-11","2021-11-23","Time: 10:30
+1. Item + price：IX系列
+2. Application + 產業別：環控系統
+3. End User: USA
+""拜訪內容
+拜訪RD 陳見霖, 了解其確認IX系列規格後, 此款產品空間確實比RJ45小, 且帶LOCK &高速傳輸(4G), 品質上較為優質, 但價格偏高, 目前暫無更換需求, 後續如有高階產品設計會再參考"
+"1022",83,"郭采帆(Chloe)",9575,"圻逸","圻逸#例行拜訪","E","E",10,"2016-06-27","2022-03-07","Time:13:30
+1. Item + price：DF12NC(3.0)-40DS-0.5V(51) & DF12NC(3.0)-40DP-0.5V(51)&DM3CS-SF
+2. Application + 產業別：影像處理控制板
+3. End User： EUR & USA
+拜訪內容 : 
+拜訪RD 韓穎倫 & 認識RD 簡宏全, 了解其主要負責影像處理控制板, 介紹HRS產品, 了解其目前有在尋BTB 40PIN, pitch:0.5, 結合高度不超過3.0MM, 推薦DF12系列, 將先提供DF12NC(3.0)-40DS-0.5V(51) & DF12NC(3.0)-40DP-0.5V(51) 資料予其參考, 另板卡想找PUSH -PULL, 薦DM3CS-SF, 資料先提供其確認後申請樣品"
+"1023",83,"郭采帆(Chloe)",1784,"利安-TP","利安#拜訪","E","E",10,"2021-12-29","2022-02-11","Time: 10:30
+1. Item + price：HR10A-10P-12S(74) 
+2. Application + 產業別: 儀器設備
+3. End User： USA
+拜訪內容 : 
+拜訪sourcer Ruby, 提供FX23 demo board予其參考, 此款有帶power pin 且為floating type, 有Vertical & right 結合方式, 將先提供此款資料予其參考, 另討論HR10A-10P-12S(74)交期問題, 目前終端將有需求28套, 目前交期無法提前, 其會在與終端討論後提供訂單, 待收到訂單後會請HRS幫忙PULL IN"
+"1024",83,"郭采帆(Chloe)",1952,"佑霖-TP","佑霖#拜訪","E","E",10,"2022-03-09","2022-04-18","Time: 15:30
+1. Item + price：DM3 & IX & CX & FX23 & FX18 & DF40
+2. Application + 產業別：KVM Switch
+3. End User：USA & EUR
+拜訪內容 : 
+拜訪sourser Cynthia, 提供DM3AT-SF-PEJM5(PUSH PUSH) 5pcs樣品, 會再請RD確認要使用哪一款, 另FX23系列, 將先提供100pin, 結合高度10mm資料予其參考(FX23L-100S-0.5SV & FX23L-100P-0.5SV10), 會再申請價格予其參考"
+"1025",83,"郭采帆(Chloe)",862,"何迪-TP","何迪#862","E","D",10,"2014-05-16","2021-05-24","Time:work at home
+1. Item + price：ST40X-18S-CV(30)
+2. Application + 產業別： medical tablet + 醫療產品
+3. End User： USA
+4. PP時間、金額：2021Q3
+5. MP時間、金額：2022Q1     fc:1K  
+""6. 拜訪內容 : 
+與Sourcer Sunny討論, 了解原pending案子, 目前要進行打樣, 詢問ST40X-18S-CV(30)此款價格&交期, 價格將會在確後提供, 因原物料交期問題, 目前交期較長, 如有需求請其儘快下單"
+"1026",83,"郭采帆(Chloe)",11451,"同星科技","同星#拜訪","E","E",10,"2022-03-04","2022-03-25","Time: 10:30
+1. Item + price：CX & FX23 & FX18 & DF40
+2. Application + 產業別：KVM Switch
+3. End User：USA & EUR
+拜訪內容 : 
+拜訪RD 胡育騰(原公信RD負責車用產品), 討論FX23 & FX18差異, 除pitch不同外, FX23有帶Floating, 結合高度最高都可達30mm, 會在確認後請我司提供樣品, 另介紹IX系列, 此款產品空間確實比RJ45小, 且帶LOCK &高速傳輸(4G), 品質上較為優質, 其公司目前還是使用RJ45, 要替換可能性小, 會再提供資料予其參考"
+"1027",83,"郭采帆(Chloe)",6389,"全穎科技","全穎#拜訪","E","E",10,"2021-12-13","2022-03-22","Time: 10:30
+1.Item + price： FH34SRJ-34S-0.5SH(50) 
+2. Application + 產業別：Gateway
+3.End User：歐美
+拜訪:
+拜訪Sourcer Tony, 提供 FH34SRJ-34S-0.5SH(50) 10PCS樣品, 此款為上下接點, 但因layout與宏致有差異, 會再請RD核對, 價格會在依其T/P向HRS申請後提供其參考"
+"1028",83,"郭采帆(Chloe)",11243,"先豐","拜訪#先豐","E","E",10,"2020-08-13","2022-06-09","Time: 15:30
+1. Item + price：FH52K-50S-0.5SH & FH52K-20S-0.5SH 
+2.Application + 產業別：車用
+3. End User: USA
+ 拜訪內容 : 
+拜訪RD 蕭舜昌, 提供GT17 & ZE05 demo board予其參考, 此2系列目前已有導入FOXCOON 電動巴士 &電動車(IVI), Luxgen & Nissan也早已在使用, GT17系列使用是4PIN, 有4種KEY防呆, 可以for LVDS & USB2.0, 將再提供目前公信使用料號2D & SPEC予其參考, 樣品待其確認後申請"
+"1029",83,"郭采帆(Chloe)",3961,"伍豐FIRICH-TP","伍豐 # 例行性拜訪","E","D",10,"2015-04-14","2021-03-02","Time: 13:30
+1. Item + price：FX18 & FX23 & FH34SRJ
+2. Application + 產業別：POS, 
+拜訪內容 : 
+拜訪sourcer May, 了解先前詢問FX23L-60P-0.5SV8 /FX23L-60S-0.5SV此2款料, 因終端客戶close此案, 後續如有需求會再告知, 另了解其RD有確認過FH34SRJ資料, 因目前是使用local 產品, 交期約1-2周, 討論如後續有FPC connector需求, 交期&價格我司須滿足其T/P, 將會再做討論後告知"
+"1030",83,"郭采帆(Chloe)",11137,"立誠實業","立誠#拜訪","E","E",10,"2019-10-01","2021-07-09","Time: WFH
+1. Item + price：DF5A-16DP-5DSA(35)
+2. Application + 產業別：儀器設備
+3. End User： JP
+4. PP時間、金額：2021Q3        
+5. MP時間、金額：2021Q4      FC: 2K/LOT   
+""6. 拜訪內容 : 
+與sourcer Nancy討論, 確認其提供JST 規格後,推薦DF5A-16DP-5DSA(35), 將先提供2D & 3D & SPEC予其確認, 待確認後提供價格"
+"1031",83,"郭采帆(Chloe)",11407,"用新科際","用新#FH52","E","E",10,"2021-11-01","2021-12-08","Time: 15:40
+1. Item + price： FH52K-50S-0.5SH
+2. Application + 產業別: 行車紀錄器
+3. End User： USA & EUR
+拜訪內容 : 
+拜訪RD Ben, 提供FH52K-50S-0.5SH 10PCS樣品予其核對測試, 並向其解釋此款spec未註明是車規產品, 因此款溫度可達125度, 且符合日系車廠要求的車規測試標準, 將會先提供車規相關測試報告予其參考"
+"1032",83,"郭采帆(Chloe)",11377,"永泰動力","永泰動力#拜訪","E","E",10,"2021-07-16","2022-05-04","Time：13:30
+Item + price：KM32系列
+Application+產業別： 電池packing
+End User：USA & EUR
+拜訪內容：
+拜訪&認識RD 曾至錫, 了解其主要負責電池packing, 介紹HRS產品, 了解其需求要高度較低的BTW, 8~12PIN, 推薦KM32系列, 將先提供資料予其確認; 另介紹SEMITEC, 主要要看產品是否有NTC需求, 規格類似Slim case sensor, 產品目錄已提供予其參考, 後續如有需求會再告知"
+"1033",83,"郭采帆(Chloe)",10898,"正能光電","正能#拜訪","E","E",10,"2018-12-20","2022-03-04","Time: 13:30
+1. Item + price：FH52K-30S-0.5SH & DF40TC(3.5)-30DS-0.4V(51) & DF40TC-30DP-0.4V(51)
+2. Application + 產業別：車燈照相機(E-BIKE用行車紀錄器)
+3. End User：USA & Taiwan
+拜訪內容
+拜訪RD Kevin, 提供FH52K-30S-0.5SH & DF40TC(3.5)-30DS-0.4V(51) & DF40TC-30DP-0.4V(51) 10套樣品予其核對確認, 待其確認後, 會再請sourser與我司討論價格, 交期部分約20周, 後續如有需求, 也會儘快告知"
+"1034",83,"郭采帆(Chloe)",971,"台灣捷佳-TP","捷佳#FH12S / FH12A / DM3CS","D","D",10,"2015-04-10","2021-10-26","Time: 15:30
+1. Item + price：CX90MWD2-24P
+2. Application + 產業別： 可攜式醫療儀器
+3. End User： ODM
+. 拜訪內容 : 
+拜訪RD Nick, 詢問CX90MWD2-24P 樣品確認狀況, 了解此案需醫療認證, 目前尚有認證問題需討論, 所以此案目前pending, 後續如有進度會在告知"
+"1035",83,"郭采帆(Chloe)",896,"台廣-TP","台廣-MEETING","E","E",10,"2014-01-08","2022-06-13","Time: 11:00
+1. Item + price：TF38 & TM21R&DF1BZ & DF13 & DF50S
+1. 與HRS Annika討論泰金寶 TM21R & DF13交期問題, 目前已有請日本幫忙先提供部分, 後續部分會再請日本進快於7月底前提供, 將會在與泰金寶討論是否能安排先分批出貨
+2. 與HRS Annika 討論泰金寶新案問題, TF38 & DF40 & DF17 樣品Annika同意提供, TF38-30S-0.5SV(830)有庫存, 可以先提供, 其餘會在向日本申請後盡快提供, 價格部分會在與日本討論後提供
+3. 與HRS Ayako 討論有關董元下單DF3-8S-2C, 因此款日本要求不能使用車用產品上, 但此案是使用在Luxgen 舊機種上, Ayako會在與日本討論後告知結果"
+"1036",83,"郭采帆(Chloe)",2424,"台達-TP","拜訪#台達電","E","E",10,"2021-10-06","2021-10-06","Time: 13:30
+1. Item + price：JST B24B-PUDSS-1(LF)(SN)
+2. Application + 產業別：IPC
+3. End User：USA
+""拜訪內容
+拜訪認識sourcer 梁芷嫚(瑞芳介紹), 了解目前有JST B24B-PUDSS-1(LF)(SN) 需求, 會在幫忙尋找替代料, 另有HRS DF1EC-6P-2.5DSA(35) & DF1EC-8P-2.5DSA(35) 2款需求6K套, 會再提供報價&確認交期, 因建立vender code目前較為困難, 後續如要下單會請瑞芳下單"
+"1037",83,"郭采帆(Chloe)",6424,"台裕電業-TP","台裕#GT8E","A","A",10,"2015-06-18","2022-05-17","Time:10:30
+1. Item + price：DF62WP-2EP-2.2C & DF62WP-3EP-2.2C & DF62WP-4EP-2.2C&
+DF62WP-6EP-2.2C & BH12WRA-4P & BH12-P-213 & BH12-P1-213
+2. Application + 產業別：電動助力車(LEV)
+3. End User: 山葉電裝
+4. PP時間、金額：2022Q2
+5. MP時間、金額：2022Q4 
+""拜訪內容
+拜訪Sourcer Amber, 討論此案問題, 因此為特殊料件, 台裕已向山葉告知目前交期需9-10個月, 山葉會在與HRS日本討論, 所以此案需待山葉確認後, 才會請台裕打樣測試, 待終端確認後, 會再請山葉提供LOA後向HRS申請樣品; 另有新案, 將使用GT17, 會再跟業務確認料號後, 提供我司報價"
+"1038",83,"郭采帆(Chloe)",1160,"台揚METI-TP","台揚#WTM4000","A","D",10,"2015-02-10","2021-10-07","Time: 13:30
+1. Item + price：FX10A-168S-SV(21) & FX10A-168P-SV(91)
+2. Application + 產業別：5G 基地台
+3. End User: USA
+4. PP時間、金額：2021Q4
+5. MP時間、金額：2022Q1    FC:10K/M         
+""6. 拜訪內容 : 
+與RD Ray & sourcer Cherie討論此新案問題, 了解樣品已提供終端確認, 目前終端尚未告知是否要設計變更, FX10A-168S-SV(21) & FX10A-168P-SV(91) 2款請我司先提供承認相關文件, 將申請後提供; 另Cherie反映DF3EA-2P-2V(51)此款沒有CAP, 導致SMT 產線不易打件, 將會再請HRS提供吸嘴位置&尺寸"
+"1039",83,"郭采帆(Chloe)",1160,"台揚METI-TP","台揚#5G mmWave","A","A",10,"2021-11-09","2022-02-23","Time: 13:30
+1. Item + price：MS-190
+2. Application + 產業別：5G mmWave 
+拜訪內容 : 
+拜訪sourcer Cherie, 了解此案預計3月會提供100套予終端客戶確認, 待產品確認ok後, 後續700pcs試產需求, 會盡快確認後提供, 因目前交期都需20-24周, 會再請PM幫忙確認後續schedule."
+"1040",83,"郭采帆(Chloe)",1160,"台揚METI-TP","台揚#AB-100230.A.3","C","C",10,"2022-04-20","2022-04-20","Time: 13:30
+1. Item + price：DF12NB-60DS-0.5V(51) & DF12NB(3.5)-60DP-0.5V(51) & 
+DF11C-8DP-2V(57)
+2. Application + 產業別：Gen 1.5 無線電收發器
+3. End User: New Edge
+4. PP時間、金額：2022Q4
+5. MP時間、金額：2023Q1    FC:3K/M         
+""6. 拜訪內容 : 
+拜訪Sourcer Cherie, 討論目前交期問題, NYLON PA66原材料尚在缺料, 目前在途訂單交期部份已請日本幫忙, 會再提供交期予其; 另有關新案問題, 將使用DF12NB-60DS-0.5V(51) & DF12NB(3.5)-60DP-0.5V(51) & DF11C-8DP-2V(57), 需求30套樣品, 樣品&價格會在申請後提供"
+"1041",83,"郭采帆(Chloe)",8845,"北爾-TP","北爾#拜訪","E","E",10,"2019-09-23","2021-01-15","Time: 13:20
+1. Item + price：FH34SRJ-40S-0.5SH(50)
+2. Application + 產業別：人機介面
+3. End User： EUR
+拜訪認識Sourcer Helen,  介紹HRS產品, 先前有推薦FH34SRJ系列產品給RD, 但已離職, Helen會再將資料提供給RD參考"
+"1042",83,"郭采帆(Chloe)",10407,"太平洋電線-TP","太平洋電線#GT18WB","E","",10,"2018-03-21","2021-03-18","Time: 13:30
+1. Item + price：ZE064W
+2. Application + 產業別： 車用線束
+3. End User： LUXGEN
+拜訪內容 : 
+帶HRS ANN一起拜訪認識RD Ken, 推薦ZE064W系列(原使用GT18W HRS已不建議使用), 而其目前是鴻華供應鏈, 此款也已向鴻華推薦過, 將先提供資料予其參考"
+"1043",83,"郭采帆(Chloe)",11428,"天田焊接","天田焊接#拜訪","E","E",10,"2021-12-29","2021-12-29","Time: 13:30
+1. Item + price： HR10A-10R-10S(71)
+2. Application + 產業別: 雷射雕刻機
+3. End User： JP
+拜訪內容 : 
+拜訪認識sourcer Shinru, 介紹HRS FunctionMAX產品, 了解其公司主要是生產雷射雕刻機&點焊機, 此次將使用HR10A-10R-10S(71) 此款, 此款因有使用Nylon PA66原材料, 此原材料目前全球大缺貨, 交期需達28-30周, 將會在確認後告知,"
+"1044",83,"郭采帆(Chloe)",9718,"壬寅","壬寅#例行拜訪","E","E",10,"2016-09-20","2022-03-30","Time: 11:00
+1. Item + price：DF63-2EP-3.96C & DF63-1618PCF &DF63-2S-3.96C &DF63-1618SCF
+2. Application + 產業別：IPC
+3. End User: JP
+4. PP時間、金額：2021Q1
+5. MP時間、金額：2021Q2   FC: 3K/SET        
+""拜訪內容
+拜訪sourcer Elaine , 提供5套樣品, 並須依期要求提供相關承認文件, 會再請日本依其範本提供, 另討論訂單交期問題, 會再請HRS幫忙; 另詢問DF40C-20DS-0.4V(51) 價格&交期問題, 此款交期需20周, 價格部份會在依其T/P向HRS申請"
+"1045",83,"郭采帆(Chloe)",6726,"公信-TP","公信#車用","A","A",10,"2018-09-03","2022-04-28","Time: 14:30 (南港)
+1. Item + price：GT17HN-4DP-2H(A)(56) &GT17HN-4DP-2H(B)(56) &GT17HN-4DP-2H(C)(56) &GT17HN-4DP-2H(D)(56) & FH52E-68S-0.5SH & FH52K-10S-0.5SH & FH52K-6S-0.5SH 
+2. Application + 產業別：IVI
+3. End User：LUXGEN (OBU4.0)
+""拜訪內容
+拜訪RD Michael,  提供FH52E-68S-0.5SH 緊急追加50套樣品, 下周會先安排打樣, 後續需求會再請採購下單"
+"1046",83,"郭采帆(Chloe)",6726,"公信-TP","公信#電動車警報器","A","A",10,"2022-01-09","2022-04-08","Time: 14:00 (汐止)
+1. Item + price：ZE064W-8DP-HU/R(A) & ZE064W-8DS-HU/R(A)
+2. Application + 產業別：電動車警報器
+3. End User：all
+""拜訪內容
+拜訪RD Leo(游騏豪) 討論此案問題, 提供ZE064W-8DP-HU/R(A) & ZE064W-8DS-HU/R(A) demo board予其參考, 此demo board其會留底並會參考for後續設計, 價格部分會在向HRS申請提供其參考, 另討論打線問題, 會再提供規格&樣品&手順書予董元, 如董元無法打線, 我司有配合線材廠可安排打線"
+"1047",83,"郭采帆(Chloe)",6726,"公信-TP","公信#AT11DM","A","A",10,"2021-12-14","2022-06-07","Time: 11:20
+1. Item + price：ZE05H-24DP-2H & DF1BZ- 4P-2.5DSA &FH52K-15S-0.5SH &FH52K-40S-0.5SH & FH52K-10S-0.5SH & FH52K-12S-0.5SH & FH52K-30S-0.5SH
+2. Application + 產業別：IVI
+3. End User：勤威
+4. MP:2022Q3  FC: 3K/M   金額:11萬
+""拜訪內容
+拜訪RD Owen, 提供DF1BZ-4P-2.5DSA 80pcs樣品, 會儘快安排打件, 已下單交期日本還在確認中, 因目前缺原材料無法生產,會在持續push日本, 另ZE05H-24DP-2H 300pcs 預計6月中旬能交貨, 將先請採購安排打件時間"
+"1048",83,"郭采帆(Chloe)",6726,"公信-TP","公信#車聯網","A","A",10,"2021-11-23","2022-03-08","Time: 15:30(南港)
+1. Item + price：FH52K-24S-0.5SH & FH52K-6S-0.5SH & FH52K-15S-0.5SH 
+2. Application + 產業別：C-V2X 車聯網
+3. End User：華電聯網
+4. MP:2022Q3  FC: 2K/M
+""拜訪內容
+拜訪RD Leo(張益龍), 提供FH52K-24S-0.5SH &FH52K-6S-0.5SH & FH52K-15S-0.5SH 各60pcs樣品, 了解此案將會先for淡海新市鎮5G智慧車, 因此為公板設計, 後續也會建置在公車上, 持續follow 進度"
+"1049",83,"郭采帆(Chloe)",6726,"公信-TP","公信#DA31","B","B",10,"2022-04-08","2022-06-14","Time: 15:10
+1. Item + price：GT17HN-4DP-2H(A)(56) &GT17HN-4DP-2H(B)(56) & FH52K-50S-0.5SH& FH52K-10S-0.5SH & FH52K-6S-0.5SH & ZE05-4P-2V
+2. Application + 產業別：IVI
+3. End User：鴻華電動車Model C (SUV車)
+""拜訪內容
+拜訪RD 蔡琦, 討論此案for power問題, 其確認KM32-8P-2V(BL)(800) & KM32-8P-2H(BL)(800) 2D, Layout太大, 目前板子已洗, 因空間問題無法使用此款, 且此款耐熱溫度僅達85度, 所以須延用DF3EA-8P-2V(51) & DF3EA-8P-2H(51), 而因為simple lock, 公信會以點膠加強, 因急需於6月底前打樣100套, 30套提供給foxcoon, 70套做測試, 將先把公司目前僅有庫存數量提供予其先打樣, 不足部分, 公信會請董元提供線端, 其先以點焊方式先打樣, 而KM32-8P-2V(BL)(800) & KM32-8P-2H(BL)(800) demo board已申請, 會在拿到後提供其後續參考"
+"1050",83,"郭采帆(Chloe)",6726,"公信-TP","公信#dashboard","C","C",10,"2022-03-21","2022-04-08","1.time：13:30 (汐止)
+2.Item+price：FH26W-39S-0.3SHW(60) & FH35C-39S-0.3SHW(50)
+3.Application+產業別：dashboard
+4.PP時間：預計2022Q4 
+5.MP時間：預計2023Q1  FC: 3K/M   
+內容: 
+拜訪RD Leo, 提供FH26W-39S-0.3SHW(60) & FH35C-39S-0.3SHW(50) 各30套樣品, 將會安排做震動測試, 待確認後會再提供我司料號, 請我司提供承認書"
+"1051",83,"郭采帆(Chloe)",6726,"公信-TP","公信#AT31CM","C","C",10,"2022-03-21","2022-04-14","1.time：13:30 
+2.Item+price：FH52K-10S-0.5SH & DF3EA-8P-2V(51)
+3.Application+產業別：IVI
+4.Model: AT31CM (國瑞)
+5.PP時間：預計2022Q4 
+6.MP時間：預計2023Q2   FC: 5-10K SET/M
+內容: 
+拜訪RD 洪邦豪, 提供FH52K-10S-0.5SH 40PCS樣品(原usage:3pcs; 改變後usage: 4pcs), 了解目前新案設計for mirrow. 應該也會沿用此item, 會在確認需求後, 請我司提供樣品"
+"1052",83,"郭采帆(Chloe)",6726,"公信-TP","公信#GT17HN","A","A",10,"2021-10-19","2021-11-18","Time: 11:00
+1. Item + price：GT17HN-4DP-2H(A)(56)  &GT17HN-4DP-2H(C)(56) & GT17HNS-4DS-HU & GT17HN-4DS-2C(C) &  GT17HN-4DS-2C(A) & GT17HNS-4DS-5CF &  GT8-2428SCF(70)
+2. Application + 產業別：成運電動大巴
+3. End User：Taiwan
+""拜訪內容
+拜訪RD 蔡琦, 提供GT17HN-4DP-2H(A)(56)  &GT17HN-4DP-2H(C)(56) 各10套樣品, 會再安排先打樣予成運確認, 線端樣品會再提供予董元, 其會在與董元討論打線規格, 後續持續follow"
+"1053",83,"郭采帆(Chloe)",6726,"公信-TP","公信#GP022A","B","B",10,"2022-04-28","2022-06-07","Time: 10:30 
+1. Item + price： FH52K-68S-0.5SH & FH52K-60S-0.5SH(60)& FH52K-15S-0.5SH & DF3EA-8P-2V(51) & DF3EA-8P-2H(51)
+2. Application + 產業別：電動大巴車內廣告看板
+3. End User：China
+4. PP: 2022Q3
+5. MP:2023Q1    FC: 3-5K/M
+""拜訪內容
+拜訪RD Justin, 提供DF3EA-8P-2H(51) 20PCS 樣品, 將會安排下周打件, 因DF3EA-8P-2V(51) & DF3EA-8P-2H(51)交期較長, 目前已有下單, 交期部分會再請日本幫忙, 後續需求會在終端樣品承認OK後提供, 持續follow"
+"1054",83,"郭采帆(Chloe)",6726,"公信-TP","公信#DA35","B","B",10,"2022-05-12","2022-05-19","Time: 15:20 
+1. Item + price： FH52K-6S-0.5SH & FH52K-50S-0.5SH
+2. Application + 產業別：電子後視鏡
+3. End User：China & USA & EUR
+4. PP: 2022Q3
+5. MP:2023Q1    FC: 5K/M
+""拜訪內容
+拜訪RD Amber , 提供FH52K-6S-0.5SH & FH52K-50S-0.5SH 各40套樣品, Amber將會以此2款先進行打樣, 另了解此案有使用到IRISO 10pin & 60pin, Amber想以FH52K替代, 確認IRISO 圖紙, 與FH52K FPC cable的卡溝不同(for FH52K FPC cable卡溝是外凸出, IRISO則是凹的), Amber會在確認FPC cable是否能更換"
+"1055",83,"郭采帆(Chloe)",6726,"公信-TP","公信#AT31EM","B","B",10,"2022-06-14","2022-06-14","Time: 10:30
+1. Item + price：FH52K-10S-0.5SH & FH52K-60S-0.5SH
+2. Application + 產業別：dashboard
+3. End User：USA
+""拜訪內容
+拜訪PM Zell, 討論此案問題, 了解目前有一新案AT31EM for 機車儀表板, 使用5” panel, panel端是使用FH19SC-10S-0.5SH & FH52-60S-0.5SH, FH19SC-10S-0.5SH 此款已EOL, 且不是車規產品, 建議改使用FH52K-10S-0.5SH , FH52-60S-0.5SH 因metal fitting在內, 不易SMT&解焊, 且溫度僅達105度, 建議改使用FH52K-60S-0.5SH(溫度可達125度), 目前其公司其他案子都已改使用FH52K系列, 會再提供此2款2D & 3D &SPEC予其核對, 樣品確認後申請"
+"1056",83,"郭采帆(Chloe)",6726,"公信-TP","公信#AT125M","A","A",10,"2022-06-07","2022-06-14","Time: 13:30
+1. Item + price：FH63S-10S-0.5SH & FH63S-50S-0.5SH
+2. Application + 產業別：Meter
+3. End User：鴻華電動車Model C (SUV車)
+""拜訪內容
+拜訪RD Leo, 提供FH63S-10S-0.5SH & FH63S-50S-0.5SH 各100套樣品, 預計下周會安排打板, 會在建BOM後提供公信料號, 請我司提供承認資料, 價格部分已在申請中, 待確認後會再提供"
+"1057",83,"郭采帆(Chloe)",10785,"山宇生醫","山宇#HR10","A","A",10,"2018-08-10","2022-01-12","Time: 10:30
+1. Item + price：HR25-7TR-4P(73)+cable
+2. Application + 產業別：醫療用品
+3. End User： USA
+4. PP時間、金額：2019Q3
+5. MP時間、金額：2019Q4     
+""6. 拜訪內容 : 
+拜訪RD Davis 詢問此案後續需求, 了解10月已有交貨100套予終端, 因此款交期不好, 後續需求會在與終端確認後請聖曜提供訂單; 另介紹IX系列, 此款可防EMI & 可高速傳輸, 目前此款日本已有客戶在使用, 將先提供資料予其參考"
+"1058",83,"郭采帆(Chloe)",3746,"大鵬科技-TP","大鵬#CCTV","E","E",10,"2015-08-03","2021-10-25","Time: 13:30
+1. Item + price：FH34SRJ & TF31 & CX系列 & U.FL-R-SMT-1(10)
+2. Application + 產業別：智慧家庭安全系統
+3. End User: USA
+拜訪內容 : 
+拜訪RD 黃思豪, 提供U.FL-R-SMT-1(10) 10pcs樣品, 其會在與IPEX NHF1做比較後告知結果, 另了解其FPC 大都使用8-12PIN, 將先提供FH34SRJ-12S-0.5SH(50) 樣品予其核對"
+"1059",83,"郭采帆(Chloe)",1611,"大朋電子-TP","大朋#GT8E","C","C",10,"2016-07-29","2022-05-25","Time: 10:30
+1. Item + price：HR25-7TR-4P(73)+cable
+2. Application + 產業別：醫療用品
+3. End User： 聖曜
+4. PP時間、金額：2022Q3
+5. MP時間、金額：2022Q4     
+""6. 拜訪內容 : 
+拜訪Kevin 提供Justin客戶樣品, Kevin會再請公司幫忙安排打樣, 另討論聖曜新案問題, 因聖曜要在線材上打上2顆鐵紛芯, Kevin建議使用扣式鐵粉芯, 價錢較高但在加工上會比較簡單, Kevin會再提供目前其公司有在使用的鐵粉芯規格給聖曜參考"
+"1060",83,"郭采帆(Chloe)",9647,"千皓電子","千皓#DF1E","E","E",10,"2016-08-12","2021-02-01","Time:15:30
+1. Item + price：DF22R-1S-7.92C(28) /DF22R-3S-7.92C(28) /DF22R-2S-7.92C(28) /DF22A-1012SCF
+2. Application + 產業別：power board
+3. End User: JP
+4. PP時間、金額：2021Q2
+5. MP時間、金額：2021Q3
+拜訪sourcer Carol, 提供DF22R-1S-7.92C(28) /DF22R-3S-7.92C(28) /DF22R-2S-7.92C(28) /DF22A-1012SCF 10套樣品予其先打樣, 了解原先案子終端客戶取消, 目前此樣會提供新案使用, 因是屬於搶單, 價格會再與HRS申請後提供"
+"1061",83,"郭采帆(Chloe)",4233,"久騰-TP","久騰#IPC","E","E",10,"2015-06-10","2022-01-03","Time: 15:30
+1. Item + price：FH52K & ZE05系列
+2. Application + 產業別：車聯網
+3. End User：USA & EUR
+拜訪內容 :
+拜訪PM Jenny,  提供FH52K-50S-0.5SH  10PCS樣品予其核對, 另提供ZE05系列 demo board予其參考, 目前此款可當I/O, 拉拔力可達98牛頓, 將提供8 & 12PIN資料予其參考"
+"1062",83,"郭采帆(Chloe)",4302,"一寶實達-TP","一寶實達#HR25-7TP","E","C",10,"2016-01-18","2020-09-02","Time: 15:10
+1. Item + price：DF40 & DF12 & HR10A系列
+2. Application + 產業別：IPC Camera module
+3. End User: JP
+4. PP時間、金額：2020Q4
+5. MP時間、金額：2021Q1     FC: 1K  
+""拜訪內容
+拜訪sourcer Anne, 討論產品問題, 了解DF40 40pin較符合其需求, 會再與RD確認機構需求結合高度後申請樣品"
+"1063",83,"郭采帆(Chloe)",5813,"HP","HP#拜訪","E","E",10,"2020-12-01","2021-03-19","Time: 15:00
+1. Item + price：TF31 & FH34SRJ
+2. Application + 產業別： NB
+3. End User： HP
+ 拜訪內容 : 
+拜訪RD Frank, 了解其有直立FPC 需求, 推薦TF38系列, 此系列HP printer有使用30 & 40pin, 將會先提供資料予其參考, 另會再整理目前 HP printer有使用TF31 & FH34SRJ 料號予其參考"
+"1064",83,"郭采帆(Chloe)",11445,"CCS Inc.","CCS#拜訪","E","E",10,"2022-02-17","2022-02-17","Time: 10:30
+1. Item + price：HIF3MW
+2. Application + 產業別: LED Lighting
+3. End User： USA & EUR & JP
+拜訪認識RD 張文耀, 其公司主要是生產LED Lighting, 了解目前有在尋找牛角connector(類似HRS HIF3MW系列), 目前大都使用10PIN, 因HRS HIF3MW系列價格偏高, 會在"

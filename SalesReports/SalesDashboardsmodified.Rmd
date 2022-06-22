@@ -1,0 +1,654 @@
+---
+title: "Sales Dashboards"
+output: 
+  flexdashboard::flex_dashboard:
+    orientation: columns
+    vertical_layout: fill
+---
+
+```{r setup, include=FALSE}
+library(flexdashboard)
+library(DT)
+#library("tidyverse")
+library("plyr")
+#library("dplyr")
+```
+
+
+```{r data}
+
+load("C:/Users/elvis/Documents/fwt_reports/SalesReports/custpo.RData")
+
+```
+
+Total customer orders {data-navmenu=Sales}
+=======================================================================
+
+Row {data-width=300}
+-----------------------------------------------------------------------
+### 累計訂單金額 (單位萬元) {.value-box}
+```{r}
+require(plyr)
+#蔡坤庭(Justin)
+#郭采帆(Chloe)
+#王秋惠(Nicole)
+#張良基(Adam)
+Totalorders8 <- sum(ERPcustpos8$Ntamt)
+Totalorders13 <- sum(ERPcustpos13$Ntamt)
+valueBox(round((Totalorders8+Totalorders13) / 10000))
+```
+
+
+### 平均每月接單金額 (單位:萬元)
+```{r}
+thismonth <- strftime(Sys.Date(),"%m")
+totalmonths <- as.numeric(thismonth) 
+Totalorders8 <- sum(ERPcustpos8$Ntamt)
+Totalorders13 <- sum(ERPcustpos13$Ntamt)
+Totalorders <- (Totalorders8+Totalorders13) /10000
+valueBox(round(Totalorders / totalmonths))
+```
+
+Column {data-width=200}
+-----------------------------------------------------------------------
+### Justin 累計訂單金額 (單位萬元) {.value-box}
+```{r}
+require(plyr)
+Justin <- subset(ERPcustpos8,Sales=="蔡坤庭(Justin)")
+#蔡坤庭(Justin)
+#郭采帆(Chloe)
+#王秋惠(Nicole)
+#張良基(Adam)
+valueBox(Justinpo <- round(sum(Justin$Ntamt) / 10000))
+```
+
+### Justin 月平均金額 (單位萬元) {.value-box}
+```{r}
+valueBox(round(Justinpo/totalmonths, digits=2))
+```
+
+Column {data-width=200}
+-----------------------------------------------------------------------
+### Nicole 累計訂單金額 (單位萬元) {.value-box}
+```{r}
+Nicole <- subset(ERPcustpos8,Sales=="王秋惠(Nicole)")
+#蔡坤庭(Justin)
+#郭采帆(Chloe)
+#王秋惠(Nicole)
+#張良基(Adam)
+valueBox(Nicolepo <- round(sum(Nicole$Ntamt) / 10000))
+```
+
+### Nicole 月平均金額 (單位萬元) {.value-box}
+```{r}
+valueBox(round(Nicolepo/totalmonths, digits=2))
+```
+
+Column {data-width=200}
+-----------------------------------------------------------------------
+### Chloe 境內累計訂單金額 (單位:台幣萬元) {.value-box}
+```{r}
+Chloe8 <- subset(ERPcustpos8,Sales=="郭采帆(Chloe)")
+#蔡坤庭(Justin)
+#郭采帆(Chloe)
+#王秋惠(Nicole)
+#張良基(Adam)
+valueBox(Chloepo8 <- round(sum(Chloe8$Ntamt) / 10000))
+```
+
+###  {.value-box}
+```{r}
+require(plyr)
+# 累計月數更新
+thismonth <- strftime(Sys.Date(),"%m")
+totalmonths <- as.numeric(thismonth) 
+if(totalmonths < 12){
+    n <- totalmonths -1
+         } 
+#ClientNo=="04370927"
+#ClientNo=="27580987-1"
+#ClientNo=="27580987-4"
+#ClientNo=="27580987-5"
+#ClientNO=="27580987-2" 蘇州
+nkg_allA <- subset(ERPcustpos13,ClientNo=="04370927" |
+                    ClientNo=="27580987-1" |
+                    ClientNo=="27580987-2" |
+                    ClientNo=="27580987-4" |
+                    ClientNo=="27580987-5")
+nkgoutputall <- round(sum(nkg_allA$Ntamt) / 10000,digits=2)
+valueBox(nkgoutputall,caption="Chloe 境外累計訂單:台幣萬元(匯率採28)")
+
+```
+
+###  {.value-box}
+```{r}
+valueBox(nkgoutputall+Chloepo8,caption="Chloe 累計總訂單:台幣萬元")
+
+```
+
+### Chloe 月平均金額 (單位萬元) {.value-box}
+```{r}
+valueBox(round((nkgoutputall+Chloepo8)/totalmonths, digits=2))
+```
+
+Column {data-width=200}
+-----------------------------------------------------------------------
+### {.value-box}
+```{r}
+Adam <- subset(ERPcustpos8,Sales=="張良基(Adam)")
+#蔡坤庭(Justin)
+#郭采帆(Chloe)
+#王秋惠(Nicole)
+#張良基(Adam)
+Adampo <- round(sum(Adam$Ntamt) / 10000)
+valueBox(Adampo, caption="Adam 境內累計訂單金額:台幣萬元")
+```
+
+###  {.value-box}
+```{r}
+Adam13 <- subset(ERPcustpos13,Sales=="張良基(Adam)")
+#蔡坤庭(Justin)
+#郭采帆(Chloe)
+#王秋惠(Nicole)
+#張良基(Adam)
+Adampo13 <- round(sum(Adam13$Ntamt) / 10000)
+valueBox(Adampo13, caption="Adam 境外累計訂單:台幣萬元(匯率採28)元")
+```
+
+###  {.value-box}
+```{r}
+valueBox(Adampo13+Adampo, caption="Adam 累計總訂單:台幣萬元")
+```
+
+### Adam 月平均金額 (單位萬元) {.value-box}
+```{r}
+valueBox(round((Adampo13+Adampo)/totalmonths, digits=2))
+```
+
+Bar chart {data-navmenu=Sales}
+=======================================================================
+ 
+```{r}
+# Inside bars
+library(ggplot2)
+orderstotal <- rbind(ERPcustpos8,ERPcustpos13)
+orderstotalbymonth <- ddply(orderstotal,.(Ordermonth),summarise,
+                    Order_amount = round(sum(Mamt)))
+ggplot(data=orderstotalbymonth, aes(x=Ordermonth, y=Order_amount)) +
+  geom_bar(stat = "identity", fill = "#6ab04c") +
+  geom_text(aes(label = Order_amount), vjust = 1.6, size = 5.5, color = "white") +
+  geom_hline(yintercept = 700, color="red") # add reference line 
+
+```
+
+
+Justin
+=======================================================================
+Row {data-width=200}
+-----------------------------------------------------------------------
+### 累計訂單金額 (單位萬元) {.value-box}
+```{r}
+require(plyr)
+Justin <- subset(ERPcustpos8,Sales=="蔡坤庭(Justin)")
+#蔡坤庭(Justin)
+#郭采帆(Chloe)
+#王秋惠(Nicole)
+#張良基(Adam)
+valueBox(Justinpo <- round(sum(Justin$Ntamt) / 10000))
+```
+
+### 本月訂單金額 (單位萬元) {.value-box}
+```{r}
+require(plyr)
+Justin <- subset(ERPcustpos8,Sales=="蔡坤庭(Justin)")
+Justin$month <- substr(Justin$Orderday,6,7)
+Justinthismonth <- subset(Justin, Justin$month==thismonth)
+#蔡坤庭(Justin)
+#郭采帆(Chloe)
+#王秋惠(Nicole)
+#張良基(Adam)
+valueBox(round(sum(Justinthismonth$Ntamt) / 10000))
+```
+
+Column {.tabset}
+-----------------------------------------------------------------------
+### Bar Chart
+```{r}
+# Inside bars
+library(ggplot2)
+orderstotal <- rbind(ERPcustpos8,ERPcustpos13)
+Justinbar <- subset(orderstotal,Sales=="蔡坤庭(Justin)")
+Justinbarbymonth <- ddply(Justinbar,.(Ordermonth),summarise,
+                    Order_amount = round(sum(Mamt)))
+ggplot(data=Justinbarbymonth, aes(x=Ordermonth, y=Order_amount)) +
+  geom_bar(stat = "identity", fill = "#6ab04c") +
+  geom_text(aes(label = Order_amount), vjust = 1.6, size = 5.5, color = "white")  
+
+```
+
+
+### 累計訂單 by Customers
+```{r}
+require(plyr)
+Justinorders <- subset(Justin, select= c(Sales,Customer,Ntamt))
+Justinorders <- ddply(Justinorders,.(Sales, Customer),summarise,
+                    Total = round(sum(Ntamt)/10000, digits=2))
+#arrange(Justinorders, desc(Justinorders$Ntamt))
+#Justinorders %>% arrange(desc(Total))
+Justinorders <- Justinorders[order(-Justinorders$Total),]
+datatable(Justinorders,rownames = FALSE)
+```
+
+### 本月訂單 by Customers
+```{r}
+require(plyr)
+Justin <- subset(ERPcustpos8,Sales=="蔡坤庭(Justin)")
+Justin$month <- substr(Justin$Orderday,6,7)
+Justinthismonth <- subset(Justin, Justin$month==thismonth)
+Justinthismonthorders <- subset(Justinthismonth, select=c(Sales,Customer,Ntamt))
+
+Justinthismonthorders <- ddply(Justinthismonthorders,.(Sales,Customer),summarise,Total = round(sum(Ntamt)/10000, digits=2))
+
+#arrange(Justinorders, desc(Justinorders$Ntamt))
+#Justinorders %>% arrange(desc(Total))
+#require(stats)
+Justinthismonthorders <- Justinthismonthorders[order(Total),]
+datatable(Justinthismonthorders,rownames = FALSE)
+```
+
+### CRM日報表
+```{r}
+Justincrm <- subset(dfcrm,DisplayName=="蔡坤庭(Justin)",select= c("Year","RecordDate","CoShortName","WorkDescription"))
+datatable(Justincrm, rownames = FALSE)
+```
+### CRM次數
+```{r}
+library(dplyr)
+Justincrmsum <- Justincrm %>% 
+  group_by(CoShortName) %>% 
+  summarise(Visits_from_2020_to_2021 = n()) %>%
+  arrange(desc(Visits_from_2020_to_2021))
+Justincrmsum$Ratio <- round(Justincrmsum$Visits_from_2020_to_2021 / sum(Justincrmsum$Visits_from_2020_to_2021), digits=3) * 100
+datatable(Justincrmsum)
+```
+
+
+Nicole
+=======================================================================
+Row {data-width=200}
+-----------------------------------------------------------------------
+### 累計訂單金額 (單位萬元) {.value-box}
+```{r}
+require(plyr)
+Nicole <- subset(ERPcustpos8,Sales=="王秋惠(Nicole)")
+#蔡坤庭(Justin)
+#郭采帆(Chloe)
+#王秋惠(Nicole)
+#張良基(Adam)
+valueBox(Nicolepo <- round(sum(Nicole$Ntamt) / 10000))
+```
+
+### 本月訂單金額 (單位萬元) {.value-box}
+```{r}
+require(plyr)
+Nicole <- subset(ERPcustpos8,Sales=="王秋惠(Nicole)")
+Nicole$month <- substr(Nicole$Orderday,6,7)
+Nicolethismonth <- subset(Nicole, Nicole$month==thismonth)
+#蔡坤庭(Justin)
+#郭采帆(Chloe)
+#王秋惠(Nicole)
+#張良基(Adam)
+valueBox(round(sum(Nicolethismonth$Ntamt) / 10000))
+```
+
+Column {.tabset}
+-----------------------------------------------------------------------
+### Bar Chart
+```{r}
+# Inside bars
+library(ggplot2)
+orderstotal <- rbind(ERPcustpos8,ERPcustpos13)
+Nicolebar <- subset(orderstotal,Sales=="王秋惠(Nicole)")
+Nicolebarbymonth <- ddply(Nicolebar,.(Ordermonth),summarise,
+                    Order_amount = round(sum(Mamt)))
+ggplot(data=Nicolebarbymonth, aes(x=Ordermonth, y=Order_amount)) +
+  geom_bar(stat = "identity", fill = "#6ab04c") +
+  geom_text(aes(label = Order_amount), vjust = 1.6, size = 5.5, color = "white")  
+
+```
+
+
+
+### 累計訂單 by Customers
+```{r}
+require(plyr)
+Nicoleorders <- subset(Nicole, select= c(Sales,Customer,Ntamt))
+Nicoleorders <- ddply(Nicoleorders,.(Sales, Customer),summarise,
+                    Total = round(sum(Ntamt)/10000, digits=2))
+#arrange(Nicoleorders, desc(Nicoleorders$Ntamt))
+#Nicoleorders %>% arrange(desc(Total))
+Nicoleorders <- Nicoleorders[order(-Nicoleorders$Total),]
+datatable(Nicoleorders,rownames = FALSE)
+```
+
+### 本月訂單 by Customers
+```{r}
+require(plyr)
+Nicole <- subset(ERPcustpos8,Sales=="王秋惠(Nicole)")
+Nicole$month <- substr(Nicole$Orderday,6,7)
+Nicolethismonth <- subset(Nicole, Nicole$month==thismonth)
+Nicolethismonthorders <- subset(Nicolethismonth, select=c(Sales,Customer,Ntamt))
+
+Nicolethismonthorders <- ddply(Nicolethismonthorders,.(Sales,Customer),summarise,Total = round(sum(Ntamt)/10000, digits=2))
+#arrange(Nicoleorders, desc(Nicoleorders$Ntamt))
+#Nicoleorders %>% arrange(desc(Total))
+Nicolethismonthorders <- Nicolethismonthorders[order(-Nicolethismonthorders$Total),]
+datatable(Nicolethismonthorders,rownames = FALSE)
+```
+### CRM日報表
+```{r}
+Nicolecrm <- subset(dfcrm,DisplayName=="王秋惠(Nicole)",select= c("Year","RecordDate","CoShortName","WorkDescription"))
+datatable(Nicolecrm, rownames = FALSE)
+```
+### CRM次數
+```{r}
+Nicolecrmsum <- Nicolecrm %>% 
+  group_by(CoShortName) %>% 
+  summarise(Visits_from_2020_to_2021 = n()) %>%
+  arrange(desc(Visits_from_2020_to_2021))
+Nicolecrmsum$Ratio <- round(Nicolecrmsum$Visits_from_2020_to_2021 / sum(Nicolecrmsum$Visits_from_2020_to_2021), digits=3) * 100
+datatable(Nicolecrmsum)
+```
+
+
+
+
+Chloe
+=======================================================================
+Row {data-width=200}
+-----------------------------------------------------------------------
+### 境內累計訂單金額 (單位:台幣萬元) {.value-box}
+```{r}
+Chloe8 <- subset(ERPcustpos8,Sales=="郭采帆(Chloe)")
+#蔡坤庭(Justin)
+#郭采帆(Chloe)
+#王秋惠(Nicole)
+#張良基(Adam)
+valueBox(Chloepo8 <- round(sum(Chloe8$Ntamt) / 10000))
+```
+
+###  {.value-box}
+```{r}
+require(plyr)
+# 累計月數更新
+thismonth <- strftime(Sys.Date(),"%m")
+totalmonths <- as.numeric(thismonth) 
+if(totalmonths < 12){
+    n <- totalmonths -1
+         } 
+#ClientNo=="04370927"
+#ClientNo=="27580987-1"
+#ClientNo=="27580987-4"
+#ClientNo=="27580987-5"
+#ClientNO=="27580987-2" 蘇州
+nkg_allA <- subset(ERPcustpos13,ClientNo=="04370927" |
+                    ClientNo=="27580987-1" |
+                    ClientNo=="27580987-2" |
+                    ClientNo=="27580987-4" |
+                    ClientNo=="27580987-5")
+nkgoutputall <- round(sum(nkg_allA$Ntamt) / 10000,digits=2)
+valueBox(nkgoutputall,caption="NKG累計訂單:台幣萬元(匯率採28)")
+
+```
+
+### 本月境內訂單金額 (單位萬元) {.value-box}
+```{r}
+require(plyr)
+Chloe <- subset(ERPcustpos8,Sales=="郭采帆(Chloe)")
+Chloe$month <- substr(Chloe$Orderday,6,7)
+Chloethismonth <- subset(Chloe, Chloe$month==thismonth)
+#蔡坤庭(Justin)
+#郭采帆(Chloe)
+#王秋惠(Nicole)
+#張良基(Adam)
+valueBox(round(sum(Chloethismonth$Ntamt) / 10000))
+```
+
+### 本月境外訂單金額 (單位:萬元(匯率採28)) {.value-box}
+```{r}
+require(plyr)
+Chloe13 <- subset(ERPcustpos13,Sales=="郭采帆(Chloe)")
+Chloe13$month <- substr(Chloe13$Orderday,6,7)
+Chloe13thismonth <- subset(Chloe13, Chloe13$month==thismonth)
+#蔡坤庭(Justin)
+#郭采帆(Chloe)
+#王秋惠(Nicole)
+#張良基(Adam)
+valueBox(round(sum(Chloe13thismonth$Ntamt) / 10000, digits=2))
+```
+
+Column {.tabset}
+-----------------------------------------------------------------------
+### Bar Chart
+```{r}
+# Inside bars
+library(ggplot2)
+orderstotal <- rbind(ERPcustpos8,ERPcustpos13)
+Chloebar <- subset(orderstotal,Sales=="郭采帆(Chloe)")
+Chloebarbymonth <- ddply(Chloebar,.(Ordermonth),summarise,
+                    Order_amount = round(sum(Mamt)))
+ggplot(data=Chloebarbymonth, aes(x=Ordermonth, y=Order_amount)) +
+  geom_bar(stat = "identity", fill = "#6ab04c") +
+  geom_text(aes(label = Order_amount), vjust = 1.6, size = 5.5, color = "white")  
+
+```
+
+
+
+
+### 累計境內訂單
+```{r}
+require(plyr)
+Chloeorders8 <- subset(Chloe8, select= c(Sales,Customer,Ntamt))
+Chloeorders8 <- ddply(Chloeorders8,.(Sales, Customer),summarise,
+                    Total = round(sum(Ntamt)/10000, digits=2))
+#arrange(Justinorders, desc(Justinorders$Ntamt))
+#Justinorders %>% arrange(desc(Total))
+Chloeorders8 <- Chloeorders8[order(-Chloeorders8$Total),]
+datatable(Chloeorders8,rownames = FALSE)
+```
+
+### 本月境內訂單
+```{r}
+require(plyr)
+Chloe <- subset(ERPcustpos8,Sales=="郭采帆(Chloe)")
+Chloe$month <- substr(Chloe$Orderday,6,7)
+Chloethismonth <- subset(Chloe, Chloe$month==thismonth)
+Chloethismonthorders <- subset(Chloethismonth, select=c(Sales,Customer,Ntamt))
+
+Chloethismonthorders <- ddply(Chloethismonthorders,.(Sales,Customer),summarise,Total = round(sum(Ntamt)/10000, digits=2))
+#arrange(Chloeorders, desc(Chloeorders$Ntamt))
+#Chloeorders %>% arrange(desc(Total))
+Chloethismonthorders <- Chloethismonthorders[order(-Chloethismonthorders$Total),]
+datatable(Chloethismonthorders,rownames = FALSE)
+```
+
+
+### 累計境外訂單
+```{r}
+require(plyr)
+Chloeorders13 <- subset(nkg_allA, select= c(Sales,Customer,Ntamt))
+Chloeorders13 <- ddply(Chloeorders13,.(Sales, Customer),summarise,
+                    Total = round(sum(Ntamt)/10000, digits=2))
+Chloeorders13 <- Chloeorders13[order(-Chloeorders13$Total),]
+datatable(Chloeorders13,rownames = FALSE)
+```
+
+### 本月境外訂單
+```{r}
+require(plyr)
+Chloe13 <- subset(ERPcustpos13,Sales=="郭采帆(Chloe)")
+Chloe13$month <- substr(Chloe13$Orderday,6,7)
+Chloe13thismonth <- subset(Chloe13, Chloe13$month==thismonth)
+Chloe13thismonthorders <- subset(Chloe13thismonth, select=c(Sales,Customer,Ntamt))
+
+Chloe13thismonthorders <- ddply(Chloe13thismonthorders,.(Sales,Customer),summarise,Total = round(sum(Ntamt)/10000, digits=2))
+#arrange(Chloeorders, desc(Chloeorders$Ntamt))
+#Chloeorders %>% arrange(desc(Total))
+Chloe13thismonthorders <- Chloe13thismonthorders[order(-Chloe13thismonthorders$Total),]
+datatable(Chloe13thismonthorders,rownames = FALSE)
+```
+### CRM日報表
+```{r}
+Chloecrm <- subset(dfcrm,DisplayName=="郭采帆(Chloe)",select= c("Year","RecordDate","CoShortName","WorkDescription"))
+datatable(Chloecrm, rownames = FALSE)
+```
+### CRM次數
+```{r}
+Chloecrmsum <- Chloecrm %>% 
+  group_by(CoShortName) %>% 
+  summarise(Visits_from_2020_to_2021 = n()) %>%
+  arrange(desc(Visits_from_2020_to_2021))
+Chloecrmsum$Ratio <- round(Chloecrmsum$Visits_from_2020_to_2021 / sum(Chloecrmsum$Visits_from_2020_to_2021), digits=3) * 100
+datatable(Chloecrmsum)
+```
+
+
+
+
+Adam
+=======================================================================
+Row {data-width=200}
+-----------------------------------------------------------------------
+### {.value-box}
+```{r}
+Adam <- subset(ERPcustpos8,Sales=="張良基(Adam)")
+#蔡坤庭(Justin)
+#郭采帆(Chloe)
+#王秋惠(Nicole)
+#張良基(Adam)
+Adampo <- round(sum(Adam$Ntamt) / 10000)
+valueBox(Adampo, caption="境內累計訂單金額:台幣萬元")
+```
+
+
+###  {.value-box}
+```{r}
+Adam13 <- subset(ERPcustpos13,Sales=="張良基(Adam)")
+#蔡坤庭(Justin)
+#郭采帆(Chloe)
+#王秋惠(Nicole)
+#張良基(Adam)
+Adampo13 <- round(sum(Adam13$Ntamt) / 10000)
+valueBox(Adampo13, caption="境外累計訂單:台幣萬元(匯率採28)元")
+```
+
+### 本月境內訂單金額 (單位萬元) {.value-box}
+```{r}
+require(plyr)
+Adam <- subset(ERPcustpos8,Sales=="張良基(Adam)")
+Adam$month <- substr(Adam$Orderday,6,7)
+Adamthismonth <- subset(Adam, Adam$month==thismonth)
+#蔡坤庭(Justin)
+#郭采帆(Chloe)
+#王秋惠(Nicole)
+#張良基(Adam)
+valueBox(round(sum(Adamthismonth$Ntamt) / 10000))
+```
+
+### 本月境外訂單金額 (台幣萬元(匯率採28)) {.value-box}
+```{r}
+require(plyr)
+Adam13 <- subset(ERPcustpos13,Sales=="張良基(Adam)")
+Adam13$month <- substr(Adam13$Orderday,6,7)
+Adam13thismonth <- subset(Adam13, Adam13$month==thismonth)
+#蔡坤庭(Justin)
+#郭采帆(Chloe)
+#王秋惠(Nicole)
+#張良基(Adam)
+valueBox(round(sum(Adam13thismonth$Ntamt) / 10000, digits=2))
+```
+
+
+Column {.tabset}
+-----------------------------------------------------------------------
+### Bar Chart
+```{r}
+# Inside bars
+library(ggplot2)
+orderstotal <- rbind(ERPcustpos8,ERPcustpos13)
+Adambar <- subset(orderstotal,Sales=="張良基(Adam)")
+Adambarbymonth <- ddply(Adambar,.(Ordermonth),summarise,
+                    Order_amount = round(sum(Mamt)))
+ggplot(data=Adambarbymonth, aes(x=Ordermonth, y=Order_amount)) +
+  geom_bar(stat = "identity", fill = "#6ab04c") +
+  geom_text(aes(label = Order_amount), vjust = 1, size = 4, color = "white")  
+
+```
+
+
+
+### 累計境內訂單
+```{r}
+require(plyr)
+Adamorders8 <- subset(Adam, select= c(Sales,Customer,Ntamt))
+Adamorders8 <- ddply(Adamorders8,.(Sales, Customer),summarise,
+                    Total = round(sum(Ntamt)/10000, digits=2))
+Adamorders8 <- Adamorders8[order(-Adamorders8$Total),]
+datatable(Adamorders8,rownames = FALSE)
+```
+
+### 本月境內訂單
+```{r}
+require(plyr)
+Adam <- subset(ERPcustpos8,Sales=="張良基(Adam)")
+Adam$month <- substr(Adam$Orderday,6,7)
+Adamthismonth <- subset(Adam, Adam$month==thismonth)
+Adamthismonthorders <- subset(Adamthismonth, select=c(Sales,Customer,Ntamt))
+
+Adamthismonthorders <- ddply(Adamthismonthorders,.(Sales,Customer),summarise,Total = round(sum(Ntamt)/10000, digits=2))
+#arrange(Adamorders, desc(Adamorders$Ntamt))
+#Adamorders %>% arrange(desc(Total))
+Adamthismonthorders <- Adamthismonthorders[order(-Adamthismonthorders$Total),]
+datatable(Adamthismonthorders,rownames = FALSE)
+```
+
+### 累計境外訂單
+```{r}
+require(plyr)
+Adamorders13 <- subset(Adam13, select= c(Sales,Customer,Ntamt))
+Adamorders13 <- ddply(Adamorders13,.(Sales, Customer),summarise,
+                    Total = round(sum(Ntamt)/10000, digits=2))
+Adamorders13 <- Adamorders13[order(-Adamorders13$Total),]
+datatable(Adamorders13,rownames = FALSE)
+```
+
+### 本月境外訂單
+```{r}
+require(plyr)
+Adam13 <- subset(ERPcustpos13,Sales=="張良基(Adam)")
+Adam13$month <- substr(Adam13$Orderday,6,7)
+Adam13thismonth <- subset(Adam13, Adam13$month==thismonth)
+Adam13thismonthorders <- subset(Adam13thismonth, select=c(Sales,Customer,Ntamt))
+
+Adam13thismonthorders <- ddply(Adam13thismonthorders,.(Sales,Customer),summarise,Total = round(sum(Ntamt)/10000, digits=2))
+#arrange(Chloeorders, desc(Chloeorders$Ntamt))
+#Chloeorders %>% arrange(desc(Total))
+if (dim(Adam13thismonthorders)[1] != 0) {Adam13thismonthorders <- Adam13thismonthorders[order(-Adam13thismonthorders$Total),]}
+datatable(Adam13thismonthorders,rownames = FALSE)
+```
+
+### CRM日報表
+```{r}
+Adamcrm <- subset(dfcrm,DisplayName=="張良基(Adam)",select= c("Year","RecordDate","CoShortName","WorkDescription"))
+datatable(Adamcrm, rownames = FALSE)
+```
+### CRM次數
+```{r}
+Adamcrmsum <- Adamcrm %>% 
+  group_by(CoShortName) %>% 
+  summarise(Visits_from_2020_to_2021 = n()) %>%
+  arrange(desc(Visits_from_2020_to_2021))
+Adamcrmsum$Ratio <- round(Adamcrmsum$Visits_from_2020_to_2021 / sum(Adamcrmsum$Visits_from_2020_to_2021), digits=3) * 100
+datatable(Adamcrmsum)
+```

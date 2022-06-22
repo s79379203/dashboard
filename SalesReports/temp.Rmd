@@ -1,0 +1,144 @@
+---
+title: "Untitled"
+output: 
+  flexdashboard::flex_dashboard:
+    orientation: columns
+    vertical_layout: fill
+---
+
+```{r setup, include=FALSE}
+library(flexdashboard)
+```
+
+Row {data-width=1000}
+-----------------------------------------------------------------------
+### 累計訂單金額 (單位萬元) {.value-box}
+```{r}
+require(plyr)
+#蔡坤庭(Justin)
+#郭采帆(Chloe)
+#王秋惠(Nicole)
+#張良基(Adam)
+Totalorders8 <- sum(ERPcustpos8$Ntamt)
+Totalorders13 <- sum(ERPcustpos13$Ntamt)
+valueBox(round((Totalorders8+Totalorders13) / 10000))
+```
+
+
+### 平均每月接單金額 (單位:萬元)
+```{r}
+thismonth <- strftime(Sys.Date(),"%m")
+totalmonths <- as.numeric(thismonth) 
+Totalorders8 <- sum(ERPcustpos8$Ntamt)
+Totalorders13 <- sum(ERPcustpos13$Ntamt)
+Totalorders <- (Totalorders8+Totalorders13) /10000
+valueBox(round(Totalorders / totalmonths))
+```
+
+Column {data-width=200}
+-----------------------------------------------------------------------
+### Justin 累計訂單金額 (單位萬元) {.value-box}
+```{r}
+require(plyr)
+Justin <- subset(ERPcustpos8,Sales=="蔡坤庭(Justin)")
+#蔡坤庭(Justin)
+#郭采帆(Chloe)
+#王秋惠(Nicole)
+#張良基(Adam)
+valueBox(Justinpo <- round(sum(Justin$Ntamt) / 10000))
+```
+
+Column {data-width=200}
+-----------------------------------------------------------------------
+### Nicole 累計訂單金額 (單位萬元) {.value-box}
+```{r}
+Nicole <- subset(ERPcustpos8,Sales=="王秋惠(Nicole)")
+#蔡坤庭(Justin)
+#郭采帆(Chloe)
+#王秋惠(Nicole)
+#張良基(Adam)
+valueBox(Nicolepo <- round(sum(Nicole$Ntamt) / 10000))
+```
+
+Column {data-width=200}
+-----------------------------------------------------------------------
+### Chloe 境內累計訂單金額 (單位:台幣萬元) {.value-box}
+```{r}
+Chloe8 <- subset(ERPcustpos8,Sales=="郭采帆(Chloe)")
+#蔡坤庭(Justin)
+#郭采帆(Chloe)
+#王秋惠(Nicole)
+#張良基(Adam)
+valueBox(Chloepo8 <- round(sum(Chloe8$Ntamt) / 10000))
+```
+
+###  {.value-box}
+```{r}
+require(plyr)
+# 累計月數更新
+thismonth <- strftime(Sys.Date(),"%m")
+totalmonths <- as.numeric(thismonth) 
+if(totalmonths < 12){
+    n <- totalmonths -1
+         } 
+#ClientNo=="04370927"
+#ClientNo=="27580987-1"
+#ClientNo=="27580987-4"
+#ClientNo=="27580987-5"
+#ClientNO=="27580987-2" 蘇州
+nkg_allA <- subset(ERPcustpos13,ClientNo=="04370927" |
+                    ClientNo=="27580987-1" |
+                    ClientNo=="27580987-2" |
+                    ClientNo=="27580987-4" |
+                    ClientNo=="27580987-5")
+nkgoutputall <- round(sum(nkg_allA$Ntamt) / 10000,digits=2)
+valueBox(nkgoutputall,caption="Chloe 境外累計訂單:台幣萬元(匯率採28)")
+
+```
+
+Column {data-width=200}
+-----------------------------------------------------------------------
+### {.value-box}
+```{r}
+Adam <- subset(ERPcustpos8,Sales=="張良基(Adam)")
+#蔡坤庭(Justin)
+#郭采帆(Chloe)
+#王秋惠(Nicole)
+#張良基(Adam)
+Adampo <- round(sum(Adam$Ntamt) / 10000)
+valueBox(Adampo, caption="Adam 境內累計訂單金額:台幣萬元")
+```
+
+###  {.value-box}
+```{r}
+Adam13 <- subset(ERPcustpos13,Sales=="張良基(Adam)")
+#蔡坤庭(Justin)
+#郭采帆(Chloe)
+#王秋惠(Nicole)
+#張良基(Adam)
+Adampo13 <- round(sum(Adam13$Ntamt) / 10000)
+valueBox(Adampo13, caption="Adam 境外累計訂單:台幣萬元(匯率採28)元")
+```
+
+
+### Chart A
+
+```{r}
+
+```
+
+Column {data-width=350}
+-----------------------------------------------------------------------
+
+### Chart B
+
+```{r}
+
+```
+
+### Chart C
+
+```{r}
+
+```
+
