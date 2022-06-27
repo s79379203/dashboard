@@ -1,0 +1,973 @@
+---
+title: "FWT Dashboards"
+output: 
+  flexdashboard::flex_dashboard:
+    orientation: rows
+    vertical_layout: fill
+    navbar:
+        - { icon: "fa-user-friends", href: "http://192.168.0.87/fwt_aaa/SalesReports/SalesDashboards.html", align: right }
+runtime: shiny
+---
+
+```{r setup, include=FALSE}
+library(flexdashboard)
+library(DT)
+
+```
+
+
+```{r data}
+
+load("C:/Users/elvis/Documents/fwt_reports/fwtdata.RData")
+load("C:/Users/elvis/Documents/fwt_reports/fwtinput2020.RData")
+
+```
+
+
+
+Output 2022年累計
+=======================================================================
+
+Row
+-----------------------------------------------------------------------
+### 累計出貨金額 (單位萬元) {.value-box}
+```{r}
+valueBox(totaloutput <- round(sum(sqlResultall$samt) / 10000))
+```
+
+### 平均每月出貨金額 (單位:萬元)
+```{r}
+thismonth <- strftime(Sys.Date(),"%m")
+totalmonths <- as.numeric(thismonth) 
+if(totalmonths > 1  & totalmonths < 12){
+    totalmonths <- totalmonths -1
+} 
+valueBox(round(totaloutput/totalmonths))
+```
+
+### 毛利率
+```{r}
+#totalcost <- round(sum(sqlResultall$scost) / 10000)
+#valueBox((totaloutput-totalcost) / totaloutput)
+totaloutput <- round(sum(sqlResultall$samt) / 10000)
+totalcost <- round(sum(sqlResultall$scost) / 10000)
+totalprofit <- totaloutput - totalcost
+
+
+rate <- formatC(totalprofit / totaloutput, digits = 3, format = "f")
+
+valueBox(
+    value = rate,
+    icon = "fa-area-chart",
+    color = if (rate < 0.2) "warning" else "primary"
+  )
+
+```
+
+###  月平均毛利/平均費用比
+```{r}
+#thismonth <- strftime(Sys.Date(),"%m")
+#totalmonths <- as.numeric(thismonth) 
+#if(totalmonths <= 12){
+#    totalmonths <- totalmonths -1
+#         } 
+#totalcost <- round(sum(sqlResultall$scost) / 10000)
+#valueBox((totaloutput-totalcost) / totaloutput)
+totaloutput <- round(sum(sqlResultall$samt) / 10000)
+totalcost <- round(sum(sqlResultall$scost) / 10000)
+totalprofit <- totaloutput - totalcost
+# 月平均每月需更改分母累計幾個月
+# 累計月數更新
+avgprofit <- totalprofit / totalmonths
+#費用預估每月150萬
+#毛利與費用比率
+rateGP_EXP <- avgprofit/150
+rategauge <- formatC(rateGP_EXP, digits = 2, format = "f")
+
+library(flexdashboard)
+gauge(rategauge, min = 0, max = 1.5, symbol = '%', gaugeSectors(
+  success = c(1, 1.5), warning = c(0.8, 0.9), danger = c(0,0.7)
+))
+
+```
+
+Row
+-----------------------------------------------------------------------
+### NKG集團總出貨金額 (單位:萬元)  {.value-box}
+```{r}
+#ClientNo=="4370927"
+#ClientNo=="27580987-1"
+#ClientNo=="27580987-4"
+#ClientNo=="27580987-5"
+#ClientNO=="27580987-2" 蘇州
+nkg_allA <- subset(sqlResultall,ClientNo=="4370927" |
+                    ClientNo=="04370927" |
+                    ClientNo=="27580987-1" |
+                    ClientNo=="27580987-2" |
+                    ClientNo=="27580987-4" |
+                    ClientNo=="27580987-5")
+valueBox(nkgoutputall <- round(sum(nkg_allA$samt) / 10000))
+```
+
+### NKG集團月平均出貨金額 (單位:萬元)  {.value-box}
+```{r}
+# 累計月數更新
+#thismonth <- strftime(Sys.Date(),"%m")
+#totalmonths <- as.numeric(thismonth) 
+#if(totalmonths < 12){
+#    totalmonths <- totalmonths -1
+#         } 
+valueBox(round(nkgoutputall/ totalmonths))
+```
+
+### NKG毛利率
+```{r}
+#totalcost <- round(sum(sqlResultall$scost) / 10000)
+#valueBox((totaloutput-totalcost) / totaloutput)
+nkgoutputall <- round(sum(nkg_allA$samt) / 10000)
+nkgcostall <- round(sum(nkg_allA$scost) / 10000)
+nkgprofitall <- nkgoutputall - nkgcostall
+
+nkgrate <- formatC( nkgprofitall / nkgoutputall, digits = 2, format = "f")
+valueBox(
+    value = nkgrate,
+    color = if (nkgrate < 0.15) "warning" else "primary"
+  )
+
+```
+
+### CALCOMP(泰國)出貨金額 (單位:萬元)
+```{r}
+#27580987-1 CAL-COMP
+#4370927 金寶電子
+#27580987-4 泰金寶光電(岳陽)
+#ClientNo=="27580987-1"
+#ClientNo=="4370927" 
+#ClientNo=="27580987-4"|
+nkg_allC <- subset(sqlResultall,ClientNo=="27580987-1")
+valueBox(nkgoutputC <- round(sum(nkg_allC$samt) / 10000))
+```
+
+### 泰金寶(巴西)出貨金額 (單位:萬元)
+```{r}
+#27580987-1 CAL-COMP
+#4370927 金寶電子
+#27580987-4 泰金寶光電(岳陽)
+#ClientNo=="27580987-1"
+#ClientNo=="4370927" 
+#ClientNo=="27580987-4"|
+nkg_allD <- subset(sqlResultall,ClientNo=="27580987-5")
+valueBox(nkgoutputD <- round(sum(nkg_allD$samt) / 10000))
+```
+
+### 金寶電子(長安)出貨金額 (單位:萬元)
+```{r}
+#27580987-1 CAL-COMP
+#4370927 金寶電子
+#27580987-4 泰金寶光電(岳陽)
+#ClientNo=="27580987-1
+#ClientNo=="4370927" 
+#ClientNo=="27580987-4"|
+nkg_allB <- subset(sqlResultall,ClientNo=="4370927" | ClientNo=="04370927" )
+valueBox(nkgoutputB <- round(sum(nkg_allB$samt) / 10000))
+```
+
+
+### 泰金寶(岳陽)出貨金額 
+```{r}
+#27580987-1 CAL-COMP
+#4370927 金寶電子
+#27580987-4 泰金寶光電(岳陽)
+#27580987-5 泰金寶(巴西)
+#ClientNo=="27580987-1
+#ClientNo=="4370927" 
+#ClientNo=="27580987-4"
+#ClientNo==27580987-5
+nkg_allA <- subset(sqlResultall,ClientNo=="27580987-4")
+valueBox(nkgoutputA <- round(sum(nkg_allA$samt) / 10000))
+```
+
+### 泰金寶(蘇州)出貨金額 
+```{r}
+#27580987-1 CAL-COMP
+#4370927 金寶電子
+#27580987-4 泰金寶光電(岳陽)
+#27580987-5 泰金寶(巴西)
+#ClientNo=="27580987-1
+#ClientNo=="4370927" 
+#ClientNo=="27580987-4"
+#ClientNo==27580987-5
+#ClientNO=="27580987-2" 蘇州
+nkg_allE <- subset(sqlResultall,ClientNo=="27580987-2")
+valueBox(nkgoutputE <- round(sum(nkg_allE$samt) / 10000))
+```
+
+
+
+Column 
+-----------------------------------------------------------------------
+### Output by Sales
+```{r}
+require(plyr)
+# # 累計月數更新
+thismonth <- strftime(Sys.Date(),"%m")
+totalmonths <- as.numeric(thismonth)
+if(totalmonths <= 12){
+    n <- totalmonths -1
+} else {
+           n <- 11
+         }
+Shipbycust <- subset(sqlResultall, select= c(salesman,client,shipdate,samt, profit))
+
+#Shipbycust <- ddply(Shipbycust,.(salesman),summarise,
+#                    OutputTotal = round(sum(samt)/10000), OutputAVG= #round(OutputTotal/ n),ProfitTotal = round(sum(profit)/10000), ProfitAVG= #round(ProfitTotal/ n),GP = round(ProfitTotal / OutputTotal, digits=2))
+Shipbycust <- ddply(Shipbycust,.(salesman),summarise,
+                    OutputTotal = round(sum(samt)/10000), 
+                    ProfitTotal = round(sum(profit)/10000),
+                    GP = round(ProfitTotal / OutputTotal, digits=4))
+
+Shipbycust$OutputAVG <- round(Shipbycust$OutputTotal/ n)
+Shipbycust$ProfitAVG <- round(Shipbycust$ProfitTotal/ n)
+
+datatable(Shipbycust, options = list(dom = 't'))
+```
+
+
+Output 2022年本月
+=======================================================================
+
+Row
+-----------------------------------------------------------------------
+### 累計出貨金額 (單位萬元) {.value-box}
+```{r}
+valueBox(totaloutput7 <- round(sum(sqlResultall7$samt) / 10000))
+```
+
+
+### 毛利率
+```{r}
+#totalcost <- round(sum(sqlResultall$scost) / 10000)
+#valueBox((totaloutput-totalcost) / totaloutput)
+totaloutput7 <- round(sum(sqlResultall7$samt) / 10000)
+totalcost7 <- round(sum(sqlResultall7$scost) / 10000)
+totalprofit7 <- totaloutput7 - totalcost7
+
+
+rate <- formatC(totalprofit7 / totaloutput7, digits = 3, format = "f")
+
+valueBox(
+    value = rate,
+    icon = "fa-area-chart",
+    color = if (rate < 0.2) "warning" else "primary"
+  )
+
+```
+
+###  當月毛利/費用比
+```{r}
+#totalcost <- round(sum(sqlResultall7$scost) / 10000)
+#valueBox((totaloutput-totalcost) / totaloutput)
+totaloutput7 <- round(sum(sqlResultall7$samt) / 10000)
+totalcost7 <- round(sum(sqlResultall7$scost) / 10000)
+totalprofit7 <- totaloutput7 - totalcost7
+#avgprofit <- totalprofit / 6
+#費用預估每月150萬
+#毛利與費用比率
+rateGP_EXP <- totalprofit7/150
+rategauge <- formatC(rateGP_EXP, digits = 2, format = "f")
+
+library(flexdashboard)
+gauge(rategauge, min = 0, max = 1.5, symbol = '%', gaugeSectors(
+  success = c(1, 1.5), warning = c(0.8, 0.9), danger = c(0,0.7)
+))
+
+```
+
+
+Row
+-----------------------------------------------------------------------
+### NKG集團總出貨金額 (單位:萬元)  {.value-box}
+```{r}
+#ClientNo=="04370927"
+#ClientNo=="27580987-1"
+#ClientNo=="27580987-4"
+#ClientNo=="27580987-5"
+#ClientNO=="27580987-2" 蘇州
+nkg_all7 <- subset(sqlResultall7,ClientNo=="04370927" |
+                    ClientNo=="27580987-1" |
+                    ClientNo=="27580987-2" |
+                    ClientNo=="27580987-4" |
+                    ClientNo=="27580987-5")
+valueBox(nkgoutput7 <- round(sum(nkg_all7$samt) / 10000))
+```
+
+### NKG毛利率
+```{r}
+nkgoutputall7 <- round(sum(nkg_all7$samt) / 10000)
+nkgcostall7 <- round(sum(nkg_all7$scost) / 10000)
+nkgprofitall7 <- nkgoutputall7 - nkgcostall7
+
+nkgrate7 <- formatC( nkgprofitall7 / nkgoutputall7, digits = 2, format = "f")
+valueBox(
+    value = nkgrate7,
+    color = if (nkgrate7 < 0.15) "warning" else "primary"
+  )
+
+```
+
+### CALCOMP(泰國)出貨金額 (單位:萬元)
+```{r}
+#27580987-1 CAL-COMP
+#4370927 金寶電子
+#27580987-4 泰金寶光電(岳陽)
+#ClientNo=="27580987-1"
+#ClientNo=="4370927" 
+#ClientNo=="27580987-4"|
+nkg_allC <- subset(sqlResultall7,ClientNo=="27580987-1")
+valueBox(nkgoutputC <- round(sum(nkg_allC$samt) / 10000))
+```
+
+### 泰金寶(巴西)出貨金額 (單位:萬元)
+```{r}
+#27580987-1 CAL-COMP
+#4370927 金寶電子
+#27580987-4 泰金寶光電(岳陽)
+#ClientNo=="27580987-1"
+#ClientNo=="4370927" 
+#ClientNo=="27580987-4"|
+nkg_allD <- subset(sqlResultall7,ClientNo=="27580987-5")
+valueBox(nkgoutputD <- round(sum(nkg_allD$samt) / 10000))
+```
+
+### 金寶電子(長安)出貨金額 (單位:萬元)
+```{r}
+#27580987-1 CAL-COMP
+#4370927 金寶電子
+#27580987-4 泰金寶光電(岳陽)
+#ClientNo=="27580987-1
+#ClientNo=="4370927" 
+#ClientNo=="27580987-4"|
+nkg_allB <- subset(sqlResultall7,ClientNo=="4370927" | ClientNo=="04370927")
+valueBox(nkgoutputB <- round(sum(nkg_allB$samt) / 10000))
+```
+
+
+### 泰金寶(岳陽)出貨金額 
+```{r}
+#27580987-1 CAL-COMP
+#4370927 金寶電子
+#27580987-4 泰金寶光電(岳陽)
+#27580987-5 泰金寶(巴西)
+#ClientNo=="27580987-1
+#ClientNo=="4370927" 
+#ClientNo=="27580987-4"
+#ClientNo==27580987-5
+#ClientNO=="27580987-2" 蘇州
+nkg_allA <- subset(sqlResultall7,ClientNo=="27580987-4")
+valueBox(nkgoutputA <- round(sum(nkg_allA$samt) / 10000))
+```
+
+### 泰金寶(蘇州)出貨金額 
+```{r}
+#27580987-1 CAL-COMP
+#4370927 金寶電子
+#27580987-4 泰金寶光電(岳陽)
+#27580987-5 泰金寶(巴西)
+#ClientNo=="27580987-1
+#ClientNo=="4370927" 
+#ClientNo=="27580987-4"
+#ClientNo==27580987-5
+#ClientNO=="27580987-2" 蘇州
+nkg_allE <- subset(sqlResultall7,ClientNo=="27580987-2")
+valueBox(nkgoutputE <- round(sum(nkg_allE$samt) / 10000))
+```
+
+
+
+Column 
+-----------------------------------------------------------------------
+### Output by Sales
+```{r}
+require(plyr)
+Shipbycust <- subset(sqlResultall7, select= c(salesman,client,shipdate,samt,profit))
+Shipbycust <- ddply(Shipbycust,.(salesman),summarise,
+                    Output = round(sum(samt)/10000),Profit = round(sum(profit)/10000), GP = round(Profit / Output, digits=2))
+datatable(Shipbycust, options = list(dom = 't'))
+```
+
+
+### Output by Customers
+```{r}
+require(plyr)
+Shipbycust <- subset(sqlResultall7, select= c(salesman,client,shipdate,samt))
+ShipbycustB <- ddply(Shipbycust,.(salesman, client),summarise,
+                    Total = round(sum(samt)/10000))
+datatable(ShipbycustB)
+```
+
+2021年Output
+=======================================================================
+
+Row
+-----------------------------------------------------------------------
+### 累計出貨金額 (2020年, 單位萬元) {.value-box}
+```{r}
+valueBox(totaloutput2021 <- round(sum(sqlResultall2021$samt) / 10000))
+```
+
+### 平均每月出貨金額 (單位:萬元)
+```{r}
+valueBox(round(totaloutput2021/12))
+```
+
+### 毛利率
+```{r}
+#totalcost <- round(sum(sqlResultall$scost) / 10000)
+#valueBox((totaloutput-totalcost) / totaloutput)
+totaloutput2021 <- round(sum(sqlResultall2021$samt) / 10000)
+totalcost2021 <- round(sum(sqlResultall2021$scost) / 10000)
+totalprofit2021 <- totaloutput2021 - totalcost2021
+
+
+rate2021 <- formatC(totalprofit2021 / totaloutput2021, digits = 2, format = "f")
+valueBox(
+    value = rate2021,
+    icon = "fa-area-chart",
+    color = if (rate2021 < 0.15) "warning" else "primary"
+  )
+
+```
+
+Row
+-----------------------------------------------------------------------
+### NKG集團總出貨金額 (單位:萬元)  {.value-box}
+```{r}
+#ClientNo=="4370927"
+#ClientNo=="27580987-1"
+#ClientNo=="27580987-4"
+#ClientNo=="27580987-5"
+nkg_allA2021 <- subset(sqlResultall2021,ClientNo=="4370927" |
+                    ClientNo=="27580987-1" |
+                    ClientNo=="27580987-4" |
+                    ClientNo=="27580987-5")
+valueBox(nkgoutputall2021 <- round(sum(nkg_allA2021$samt) / 10000))
+```
+
+### NKG集團月平均出貨金額 (單位:萬元)  {.value-box}
+```{r}
+valueBox(round(nkgoutputall2021/12))
+```
+
+
+### NKG毛利率
+```{r}
+#totalcost <- round(sum(sqlResultall$scost) / 10000)
+#valueBox((totaloutput-totalcost) / totaloutput)
+nkgoutputall2021 <- round(sum(nkg_allA2021$samt) / 10000)
+nkgcostall2021 <- round(sum(nkg_allA2021$scost) / 10000)
+nkgprofitall2021 <- nkgoutputall2021 - nkgcostall2021
+
+nkgrate2021 <- formatC( nkgprofitall2021 / nkgoutputall2021, digits = 2, format = "f")
+valueBox(
+    value = nkgrate2021,
+    icon = "fa-area-chart",
+    color = if (nkgrate2021 < 0.15) "warning" else "primary"
+  )
+
+```
+
+### CALCOMP(泰國)出貨金額 (單位:萬元)
+```{r}
+#27580987-1 CAL-COMP
+#4370927 金寶電子
+#27580987-4 泰金寶光電(岳陽)
+#ClientNo=="27580987-1"
+#ClientNo=="4370927" 
+#ClientNo=="27580987-4"|
+nkg_allC2021 <- subset(sqlResultall2021,ClientNo=="27580987-1")
+valueBox(nkgoutputC2021 <- round(sum(nkg_allC2021$samt) / 10000))
+```
+
+### 泰金寶(巴西)出貨金額 (單位:萬元)
+```{r}
+#27580987-1 CAL-COMP
+#4370927 金寶電子
+#27580987-4 泰金寶光電(岳陽)
+#ClientNo=="27580987-1"
+#ClientNo=="4370927" 
+#ClientNo=="27580987-4"|
+nkg_allD2021 <- subset(sqlResultall2021,ClientNo=="27580987-5")
+valueBox(nkgoutputD2021 <- round(sum(nkg_allD2021$samt) / 10000))
+```
+
+### 金寶電子(長安)出貨金額 (單位:萬元)
+```{r}
+#27580987-1 CAL-COMP
+#4370927 金寶電子
+#27580987-4 泰金寶光電(岳陽)
+#ClientNo=="27580987-1
+#ClientNo=="4370927" 
+#ClientNo=="27580987-4"|
+nkg_allB2021 <- subset(sqlResultall2021,ClientNo=="4370927" | ClientNo=="04370927")
+valueBox(nkgoutputB2021 <- round(sum(nkg_allB2021$samt) / 10000))
+```
+
+
+### 泰金寶(岳陽)出貨金額 
+```{r}
+#27580987-1 CAL-COMP
+#4370927 金寶電子
+#27580987-4 泰金寶光電(岳陽)
+#27580987-5 泰金寶(巴西)
+#ClientNo=="27580987-1
+#ClientNo=="4370927" 
+#ClientNo=="27580987-4"
+#ClientNo==27580987-5
+nkg_allA2021 <- subset(sqlResultall2021,ClientNo=="27580987-4")
+valueBox(nkgoutputA2021 <- round(sum(nkg_allA2021$samt) / 10000))
+```
+
+
+Row
+-----------------------------------------------------------------------
+### Output by Sales
+```{r}
+require(plyr)
+Shipbycust2021 <- subset(sqlResultall2021, select= c(salesman,client,shipdate,samt,profit))
+Shipbycust2021 <- ddply(Shipbycust2021,.(salesman),summarise,
+                    OutputTotal = round(sum(samt)/10000), OutputAVG= round(OutputTotal/12),ProfitTotal = round(sum(profit)/10000), ProfitAVG= round(ProfitTotal/12),GP = round(ProfitTotal / OutputTotal, digits=2))
+                    
+datatable(Shipbycust2021, options = list(dom = 't'))
+```
+
+
+2020年Output
+=======================================================================
+
+Row
+-----------------------------------------------------------------------
+### 累計出貨金額 (2020年, 單位萬元) {.value-box}
+```{r}
+valueBox(totaloutput2020 <- round(sum(sqlResultall2020$samt) / 10000))
+```
+
+### 平均每月出貨金額 (單位:萬元)
+```{r}
+valueBox(round(totaloutput2020/12))
+```
+
+### 毛利率
+```{r}
+#totalcost <- round(sum(sqlResultall$scost) / 10000)
+#valueBox((totaloutput-totalcost) / totaloutput)
+totaloutput2020 <- round(sum(sqlResultall2020$samt) / 10000)
+totalcost2020 <- round(sum(sqlResultall2020$scost) / 10000)
+totalprofit2020 <- totaloutput2020 - totalcost2020
+
+
+rate2020 <- formatC(totalprofit2020 / totaloutput2020, digits = 2, format = "f")
+valueBox(
+    value = rate2020,
+    icon = "fa-area-chart",
+    color = if (rate2020 < 0.15) "warning" else "primary"
+  )
+
+```
+
+Row
+-----------------------------------------------------------------------
+### NKG集團總出貨金額 (單位:萬元)  {.value-box}
+```{r}
+#ClientNo=="4370927"
+#ClientNo=="27580987-1"
+#ClientNo=="27580987-4"
+#ClientNo=="27580987-5"
+nkg_allA2020 <- subset(sqlResultall2020,ClientNo=="4370927" |
+                    ClientNo=="27580987-1" |
+                    ClientNo=="27580987-4" |
+                    ClientNo=="27580987-5")
+valueBox(nkgoutputall2020 <- round(sum(nkg_allA2020$samt) / 10000))
+```
+
+### NKG集團月平均出貨金額 (單位:萬元)  {.value-box}
+```{r}
+valueBox(round(nkgoutputall2020/12))
+```
+
+
+### NKG毛利率
+```{r}
+#totalcost <- round(sum(sqlResultall$scost) / 10000)
+#valueBox((totaloutput-totalcost) / totaloutput)
+nkgoutputall2020 <- round(sum(nkg_allA2020$samt) / 10000)
+nkgcostall2020 <- round(sum(nkg_allA2020$scost) / 10000)
+nkgprofitall2020 <- nkgoutputall2020 - nkgcostall2020
+
+nkgrate2020 <- formatC( nkgprofitall2020 / nkgoutputall2020, digits = 2, format = "f")
+valueBox(
+    value = nkgrate2020,
+    icon = "fa-area-chart",
+    color = if (nkgrate2020 < 0.15) "warning" else "primary"
+  )
+
+```
+
+### CALCOMP(泰國)出貨金額 (單位:萬元)
+```{r}
+#27580987-1 CAL-COMP
+#4370927 金寶電子
+#27580987-4 泰金寶光電(岳陽)
+#ClientNo=="27580987-1"
+#ClientNo=="4370927" 
+#ClientNo=="27580987-4"|
+nkg_allC2020 <- subset(sqlResultall2020,ClientNo=="27580987-1")
+valueBox(nkgoutputC2020 <- round(sum(nkg_allC2020$samt) / 10000))
+```
+
+### 泰金寶(巴西)出貨金額 (單位:萬元)
+```{r}
+#27580987-1 CAL-COMP
+#4370927 金寶電子
+#27580987-4 泰金寶光電(岳陽)
+#ClientNo=="27580987-1"
+#ClientNo=="4370927" 
+#ClientNo=="27580987-4"|
+nkg_allD2020 <- subset(sqlResultall2020,ClientNo=="27580987-5")
+valueBox(nkgoutputD2020 <- round(sum(nkg_allD2020$samt) / 10000))
+```
+
+### 金寶電子(長安)出貨金額 (單位:萬元)
+```{r}
+#27580987-1 CAL-COMP
+#4370927 金寶電子
+#27580987-4 泰金寶光電(岳陽)
+#ClientNo=="27580987-1
+#ClientNo=="4370927" 
+#ClientNo=="27580987-4"|
+nkg_allB2020 <- subset(sqlResultall2020,ClientNo=="4370927" | ClientNo=="04370927")
+valueBox(nkgoutputB2020 <- round(sum(nkg_allB2020$samt) / 10000))
+```
+
+
+### 泰金寶(岳陽)出貨金額 
+```{r}
+#27580987-1 CAL-COMP
+#4370927 金寶電子
+#27580987-4 泰金寶光電(岳陽)
+#27580987-5 泰金寶(巴西)
+#ClientNo=="27580987-1
+#ClientNo=="4370927" 
+#ClientNo=="27580987-4"
+#ClientNo==27580987-5
+nkg_allA2020 <- subset(sqlResultall2020,ClientNo=="27580987-4")
+valueBox(nkgoutputA2020 <- round(sum(nkg_allA2020$samt) / 10000))
+```
+
+
+Row
+-----------------------------------------------------------------------
+### Output by Sales
+```{r}
+require(plyr)
+Shipbycust2020 <- subset(sqlResultall2020, select= c(salesman,client,shipdate,samt,profit))
+Shipbycust2020 <- ddply(Shipbycust2020,.(salesman),summarise,
+                    OutputTotal = round(sum(samt)/10000), OutputAVG= round(OutputTotal/12),ProfitTotal = round(sum(profit)/10000), ProfitAVG= round(ProfitTotal/12),GP = round(ProfitTotal / OutputTotal, digits=2))
+                    
+datatable(Shipbycust2020, options = list(dom = 't'))
+```
+
+
+2019年Output
+=======================================================================
+
+Row
+-----------------------------------------------------------------------
+### 累計出貨金額 (2019年, 單位萬元) {.value-box}
+```{r}
+valueBox(totaloutput2019 <- round(sum(sqlResultall2019$samt) / 10000))
+```
+
+### 平均每月出貨金額 (單位:萬元)
+```{r}
+valueBox(round(totaloutput2019/12))
+```
+
+### 毛利率
+```{r}
+#totalcost <- round(sum(sqlResultall$scost) / 10000)
+#valueBox((totaloutput-totalcost) / totaloutput)
+totaloutput2019 <- round(sum(sqlResultall2019$samt) / 10000)
+totalcost2019 <- round(sum(sqlResultall2019$scost) / 10000)
+totalprofit2019 <- totaloutput2019 - totalcost2019
+
+
+rate2019 <- formatC(totalprofit2019 / totaloutput2019, digits = 2, format = "f")
+valueBox(
+    value = rate2019,
+    icon = "fa-area-chart",
+    color = if (rate2019 < 0.15) "warning" else "primary"
+  )
+
+```
+
+Row
+-----------------------------------------------------------------------
+### NKG集團總出貨金額 (單位:萬元)  {.value-box}
+```{r}
+#ClientNo=="4370927"
+#ClientNo=="27580987-1"
+#ClientNo=="27580987-4"
+#ClientNo=="27580987-5"
+nkg_allA2019 <- subset(sqlResultall2019,ClientNo=="4370927" |
+                    ClientNo=="27580987-1" |
+                    ClientNo=="27580987-4" |
+                    ClientNo=="27580987-5")
+valueBox(nkgoutputall2019 <- round(sum(nkg_allA2019$samt) / 10000))
+```
+
+### NKG集團月平均出貨金額 (單位:萬元)  {.value-box}
+```{r}
+valueBox(round(nkgoutputall2019/12))
+```
+
+
+### NKG毛利率
+```{r}
+#totalcost <- round(sum(sqlResultall$scost) / 10000)
+#valueBox((totaloutput-totalcost) / totaloutput)
+nkgoutputall2019 <- round(sum(nkg_allA2019$samt) / 10000)
+nkgcostall2019 <- round(sum(nkg_allA2019$scost) / 10000)
+nkgprofitall2019 <- nkgoutputall2019 - nkgcostall2019
+
+nkgrate2019 <- formatC( nkgprofitall2019 / nkgoutputall2019, digits = 2, format = "f")
+valueBox(
+    value = nkgrate2019,
+    icon = "fa-area-chart",
+    color = if (nkgrate2019 < 0.15) "warning" else "primary"
+  )
+
+```
+
+### CALCOMP(泰國)出貨金額 (單位:萬元)
+```{r}
+#27580987-1 CAL-COMP
+#4370927 金寶電子
+#27580987-4 泰金寶光電(岳陽)
+#ClientNo=="27580987-1"
+#ClientNo=="4370927" 
+#ClientNo=="27580987-4"|
+nkg_allC2019 <- subset(sqlResultall2019,ClientNo=="27580987-1")
+valueBox(nkgoutputC2019 <- round(sum(nkg_allC2019$samt) / 10000))
+```
+
+### 泰金寶(巴西)出貨金額 (單位:萬元)
+```{r}
+#27580987-1 CAL-COMP
+#4370927 金寶電子
+#27580987-4 泰金寶光電(岳陽)
+#ClientNo=="27580987-1"
+#ClientNo=="4370927" 
+#ClientNo=="27580987-4"|
+nkg_allD2019 <- subset(sqlResultall2019,ClientNo=="27580987-5")
+valueBox(nkgoutputD2019 <- round(sum(nkg_allD2019$samt) / 10000))
+```
+
+### 金寶電子(長安)出貨金額 (單位:萬元)
+```{r}
+#27580987-1 CAL-COMP
+#4370927 金寶電子
+#27580987-4 泰金寶光電(岳陽)
+#ClientNo=="27580987-1
+#ClientNo=="4370927" 
+#ClientNo=="27580987-4"|
+nkg_allB2019 <- subset(sqlResultall2019,ClientNo=="4370927" | ClientNo=="04370927")
+valueBox(nkgoutputB2019 <- round(sum(nkg_allB2019$samt) / 10000))
+```
+
+
+### 泰金寶(岳陽)出貨金額 
+```{r}
+#27580987-1 CAL-COMP
+#4370927 金寶電子
+#27580987-4 泰金寶光電(岳陽)
+#27580987-5 泰金寶(巴西)
+#ClientNo=="27580987-1
+#ClientNo=="4370927" 
+#ClientNo=="27580987-4"
+#ClientNo==27580987-5
+nkg_allA2019 <- subset(sqlResultall2019,ClientNo=="27580987-4")
+valueBox(nkgoutputA2019 <- round(sum(nkg_allA2019$samt) / 10000))
+```
+
+
+Row
+-----------------------------------------------------------------------
+### Output by Sales
+```{r}
+require(plyr)
+Shipbycust2019 <- subset(sqlResultall2019, select= c(salesman,client,shipdate,samt,profit))
+Shipbycust2019 <- ddply(Shipbycust2019,.(salesman),summarise,
+                    OutputTotal = round(sum(samt)/10000), OutputAVG= round(OutputTotal/12),ProfitTotal = round(sum(profit)/10000), ProfitAVG= round(ProfitTotal/12),GP = round(ProfitTotal / OutputTotal, digits=2))
+datatable(Shipbycust2019, options = list(dom = 't'))
+```
+
+Input 2022累計
+=======================================================================
+
+Row {data-width=500}
+-----------------------------------------------------------------------
+### 總input金額 (單位:美金萬元)  {.value-box}
+```{r}
+valueBox(input2022 <- round(sum(totalinput2022$Amount) / 10000, digits=2))
+```
+
+### 平均月input金額 (單位:美金萬元)  {.value-box}
+```{r}
+# 累計月數更新
+thismonth <- strftime(Sys.Date(),"%m")
+totalmonths <- as.numeric(thismonth) 
+valueBox(round(input2022 / totalmonths , digits=2))
+```
+
+
+Row {data-width=200}
+-----------------------------------------------------------------------
+### 2022 input by sales
+```{r}
+require(plyr)
+inputbysales22 <- subset(totalinput2022, select= c(sales,customer,Amount))
+inputbysales22 <- ddply(inputbysales22,.(sales),summarise,
+                    Total = round(sum(Amount)/10000,digits=2 ))
+datatable(inputbysales22)
+```
+
+
+### 2022 input by customers
+
+```{r}
+require(plyr)
+inputbycust22 <- subset(totalinput2022, select= c(sales,customer,Amount))
+inputbycust22 <- ddply(inputbycust22,.(sales,customer),summarise,
+                    Total = round(sum(Amount)/10000,digits=2 ))
+datatable(inputbycust22)
+```
+
+Input 2022年本月
+=======================================================================
+
+Row {data-width=500}
+-----------------------------------------------------------------------
+### 總input金額 (單位:美金萬元)  {.value-box}
+```{r}
+totalinput2022$month <- substr(totalinput2022$`Item No.`, 1, 2)
+input202207 <- subset(totalinput2022, totalinput2022$month==thismonth)
+valueBox(input202207usd <- round(sum(input202207$Amount) / 10000, digits=2))
+```
+
+
+
+Row {data-width=200}
+-----------------------------------------------------------------------
+
+### 2022當月 input by sales
+
+```{r}
+require(plyr)
+inputbysales2207 <- subset(input202207, select= c(sales,customer,Amount))
+inputbysales2207 <- ddply(inputbysales2207,.(sales),summarise,
+                    Total = round(sum(Amount)/10000,digits=2 ))
+datatable(inputbysales2207)
+```
+
+
+### 2022當月 input by customers 
+
+```{r}
+require(plyr)
+inputbycust2207 <- subset(input202207, select= c(sales,customer,Amount))
+inputbycust2207 <- ddply(inputbycust2207,.(sales,customer),summarise,
+                    Total = round(sum(Amount)/10000,digits=2 ))
+datatable(inputbycust2207)
+```
+
+
+Input 2021
+=======================================================================
+
+Row {data-width=500}
+-----------------------------------------------------------------------
+### 總input金額 (單位:美金萬元)  {.value-box}
+```{r}
+valueBox(input2021 <- round(sum(totalinput2021$Amount) / 10000, digits=2))
+```
+
+### 平均月input金額 (單位:美金萬元)  {.value-box}
+```{r}
+valueBox(round(input2021 / 12 , digits=2))
+```
+
+
+Row {data-width=200}
+-----------------------------------------------------------------------
+### 2021 input by sales
+
+```{r}
+require(plyr)
+inputbysales21 <- subset(totalinput2021, select= c(sales,customer,Amount))
+inputbysales21 <- ddply(inputbysales21,.(sales),summarise,
+                    Total = round(sum(Amount)/10000,digits=2 ))
+datatable(inputbysales21)
+```
+
+
+
+### 2021 input by customer 
+
+```{r}
+require(plyr)
+inputbycust21 <- subset(totalinput2021, select= c(sales,customer,Amount))
+inputbycust21 <- ddply(inputbycust21,.(sales,customer),summarise,
+                    Total = round(sum(Amount)/10000,digits=2 ))
+datatable(inputbycust21)
+```
+
+
+Input 2020
+=======================================================================
+
+Row {data-width=500}
+-----------------------------------------------------------------------
+### 總input金額 (單位:美金萬元)  {.value-box}
+```{r}
+valueBox(input2020 <- round(sum(totalinput2020$Amount) / 10000, digits=2))
+```
+
+### 平均月input金額 (單位:美金萬元)  {.value-box}
+```{r}
+valueBox(round(input2020 / 12 , digits=2))
+```
+
+
+Row {data-width=200}
+-----------------------------------------------------------------------
+### 2020 input by sales
+
+```{r}
+require(plyr)
+inputbysales20 <- subset(totalinput2020, select= c(sales,customer,Amount))
+inputbysales20 <- ddply(inputbysales20,.(sales),summarise,
+                    Total = round(sum(Amount)/10000,digits=2 ))
+datatable(inputbysales20)
+```
+
+
+
+### 2020 input by customer 
+
+```{r}
+require(plyr)
+inputbycust20 <- subset(totalinput2020, select= c(sales,customer,Amount))
+inputbycust20 <- ddply(inputbycust20,.(sales,customer),summarise,
+                    Total = round(sum(Amount)/10000,digits=2 ))
+datatable(inputbycust20)
+```
